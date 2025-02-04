@@ -176,7 +176,7 @@ btf.addGlobalFn('pjaxSend', () => {
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'https://talkres.vercel.app/',
+      envId: 'https://www.hkjsxb.xin/',
       region: '',
       urls: [window.location.pathname],
       includeReply: false
@@ -190,7 +190,7 @@ btf.addGlobalFn('pjaxSend', () => {
   const init = (el = document, path = location.pathname) => {
     twikoo.init({
       el: el.querySelector('#twikoo-wrap'),
-      envId: 'https://talkres.vercel.app/',
+      envId: 'https://www.hkjsxb.xin/',
       region: '',
       onCommentLoaded: () => {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
