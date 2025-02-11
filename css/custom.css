@@ -1,0 +1,173 @@
+
+/* 页脚与头图透明 */
+#footer {
+  background: transparent !important;
+}
+#page-header {
+  background: transparent !important;
+}
+
+/* 白天模式遮罩透明 */
+#footer::before {
+  background: transparent !important;
+}
+#page-header::before {
+  background: transparent !important;
+}
+
+/* 夜间模式遮罩透明 */
+[data-theme="dark"] #footer::before {
+  background: transparent !important;
+}
+[data-theme="dark"] #page-header::before {
+  background: transparent !important;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+:root {
+  --trans-light: rgba(245, 245, 245, 0.9); /* 更柔和的浅灰色背景 */
+  --trans-dark: rgba(35, 35, 35, 0.9); /* 更柔和的深灰色背景 */
+  --border-style: 1px solid rgb(200, 200, 200); /* 边框颜色更柔和 */
+  --backdrop-filter: blur(5px) saturate(120%); /* 背景模糊和饱和度调整 */
+}
+
+/* 首页文章卡片 */
+#recent-posts > .recent-post-item {
+  background: var(--trans-light);
+  backdrop-filter: var(--backdrop-filter);
+  border-radius: 25px;
+  border: var(--border-style);
+}
+
+/* 首页侧栏卡片 */
+#aside-content .card-widget {
+  background: var(--trans-light);
+  backdrop-filter: var(--backdrop-filter);
+  border-radius: 18px;
+  border: var(--border-style);
+}
+
+/* 文章页、归档页、普通页面 */
+div#post,
+div#page,
+div#archive {
+  background: var(--trans-light);
+  backdrop-filter: var(--backdrop-filter);
+  border: var(--border-style);
+  border-radius: 20px;
+}
+
+/* 导航栏 */
+#page-header.nav-fixed #nav {
+  background: rgba(245, 245, 245, 0.85); /* 更柔和的白色背景 */
+  backdrop-filter: var(--backdrop-filter);
+}
+
+[data-theme="dark"] #page-header.nav-fixed #nav {
+  background: rgba(35, 35, 35, 0.85) !important; /* 更柔和的深色背景 */
+}
+
+/* 夜间模式遮罩 */
+[data-theme="dark"] #recent-posts > .recent-post-item,
+[data-theme="dark"] #aside-content .card-widget,
+[data-theme="dark"] div#post,
+[data-theme="dark"] div#archive,
+[data-theme="dark"] div#page {
+  background: var(--trans-dark);
+}
+
+/* 夜间模式页脚页头遮罩透明 */
+[data-theme="dark"] #footer::before {
+  background: transparent !important;
+}
+[data-theme="dark"] #page-header::before {
+  background: transparent !important;
+}
+
+/* 阅读模式 */
+.read-mode #aside-content .card-widget {
+  background: rgba(200, 220, 210, 0.6) !important; /* 更柔和的淡绿色背景 */
+}
+.read-mode div#post {
+  background: rgba(200, 220, 210, 0.6) !important; /* 更柔和的淡绿色背景 */
+}
+
+/* 夜间模式下的阅读模式 */
+[data-theme="dark"] .read-mode #aside-content .card-widget {
+  background: rgba(50, 50, 50, 0.85) !important; /* 更柔和的深色背景 */
+  color: #ffffff;
+}
+[data-theme="dark"] .read-mode div#post {
+  background: rgba(50, 50, 50, 0.85) !important; /* 更柔和的深色背景 */
+  color: #ffffff;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* 设置文字内容 :nth-child(1)的作用是选择第几个 */
+.el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(1):before {
+    content: '输入QQ号会自动获取昵称和头像🐧';
+}
+
+.el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(2):before {
+    content: '收到回复将会发送到您的邮箱📧';
+}
+
+.el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(3):before {
+    content: '可以通过昵称访问您的网站🔗';
+}
+
+/* 当用户点击输入框时显示 */
+.el-input.el-input--small.el-input-group.el-input-group--prepend:focus-within::before,
+.el-input.el-input--small.el-input-group.el-input-group--prepend:focus-within::after {
+    display: block;
+}
+
+/* 主内容区 */
+.el-input.el-input--small.el-input-group.el-input-group--prepend::before {
+    /* 先隐藏起来 */
+    display: none;
+    /* 绝对定位 */
+    position: absolute;
+    /* 向上移动60像素 */
+    top: -60px;
+    /* 文字强制不换行，防止left:50%导致的文字换行 */
+    white-space: nowrap;
+    /* 圆角 */
+    border-radius: 10px;
+    /* 距离左边50% */
+    left: 50%;
+    /* 然后再向左边挪动自身的一半，即可实现居中 */
+    transform: translate(-50%);
+    /* 填充 */
+    padding: 14px 18px;
+    background: #444;
+    color: #fff;
+}
+
+/* 小角标 */
+.el-input.el-input--small.el-input-group.el-input-group--prepend::after {
+    display: none;
+    content: '';
+    position: absolute;
+    /* 内容大小（宽高）为0且边框大小不为0的情况下，每一条边（4个边）都是一个三角形，组成一个正方形。
+    我们先将所有边框透明，再给其中的一条边添加颜色就可以实现小三角图标 */
+    border: 12px solid transparent;
+    border-top-color: #444;
+    left: 50%;
+    transform: translate(-50%, -48px);
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------*/
+
