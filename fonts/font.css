@@ -1,5 +1,62 @@
 @font-face {
-  font-family: 'huangkaihuaLawyerfont';
-  font-display: swap;
-  src: url('/fonts/huangkaihuaLawyerfont.ttf') format("truetype");  
+  /* 为载入的字体取名字(随意) */
+  font-family: 'huangkaihuaLawyerfont';	
+  /* 字体文件地址(相对或者绝对路径都可以) */
+  src: url(/fonts/huangkaihuaLawyerfont.ttf);
+  /* 定义加粗样式(加粗多少) */
+  font-weight: normal;
+  /* 定义字体样式(斜体/非斜体) */
+  font-style: normal;
+  /* 定义显示样式 */
+  font-display: block;
+}
+
+@font-face {
+  /* 为载入的字体取名字(随意) */
+  font-family: 'dingliezhuhaifont';	
+  /* 字体文件地址(相对或者绝对路径都可以) */
+  src: url(/fonts/dingliezhuhaifont.ttf);
+  /* 定义加粗样式(加粗多少) */
+  font-weight: normal;
+  /* 定义字体样式(斜体/非斜体) */
+  font-style: normal;
+  /* 定义显示样式 */
+ font-display: block;
+}
+
+@font-face {
+  /* 为载入的字体取名字(随意) */
+  font-family: 'FangZhengKaiTiJianTi';	
+  /* 字体文件地址(相对或者绝对路径都可以) */
+  src: url(/fonts/FangZhengKaiTiJianTi.ttf);
+  /* 定义加粗样式(加粗多少) */
+  font-weight: normal;
+  /* 定义字体样式(斜体/非斜体) */
+  font-style: normal;
+  /* 定义显示样式 */
+  font-display: block;
+}
+@font-face {
+  /* 为载入的字体取名字(随意) */
+  font-family: 'SanJiPoMoTi';	
+  /* 字体文件地址(相对或者绝对路径都可以) */
+  src: url(/fonts/SanJiPoMoTi.ttf);
+  /* 定义加粗样式(加粗多少) */
+  font-weight: normal;
+  /* 定义字体样式(斜体/非斜体) */
+  font-style: normal;
+  /* 定义显示样式 */
+  font-display: block;
+}
+@font-face {
+  /* 为载入的字体取名字(随意) */
+  font-family: 'YunFengHanChanTi';	
+  /* 字体文件地址(相对或者绝对路径都可以) */
+  src: url(/fonts/YunFengHanChanTi.ttf);
+  /* 定义加粗样式(加粗多少) */
+  font-weight: normal;
+  /* 定义字体样式(斜体/非斜体) */
+  font-style: normal;
+  /* 定义显示样式 */
+  font-display: block;
 }
