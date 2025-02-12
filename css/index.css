@@ -4510,7 +4510,8 @@ maxWidth1200()
 #page-header #post-info {
   position: absolute;
   width: 100%;
-  bottom: 30px;
+  text-align: center;
+  bottom: 100px;
 }
 #page-header #post-info > * {
   margin: 0 auto;
