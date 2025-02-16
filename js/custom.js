@@ -325,3 +325,6 @@ function changeFont(font) {
   document.documentElement.style.setProperty('--global-font', font);
   localStorage.setItem('font', font);
 }
+
+
+

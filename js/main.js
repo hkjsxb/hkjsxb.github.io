@@ -774,6 +774,32 @@ document.addEventListener('DOMContentLoaded', () => {
       })
     }
 
+
+     /**
+   * 自己写的，实现功能切换类别表
+   */ 
+  const setCategoryBarActive = () => {
+    const categoryBar = document.querySelector("#category-bar");
+    const currentPath = decodeURIComponent(window.location.pathname);
+    const isHomePage = currentPath === GLOBAL_CONFIG.root;
+
+    if (categoryBar) {
+        const categoryItems = categoryBar.querySelectorAll(".category-bar-item");
+        categoryItems.forEach(item => item.classList.remove("select"));
+
+        const activeItemId = isHomePage ? "category-bar-home" : currentPath.split("/").slice(-2, -1)[0];
+        const activeItem = document.getElementById(activeItemId);
+
+        if (activeItem) {
+            activeItem.classList.add("select");
+        }
+    }
+  };
+
+
+
+
+
     const handleNavClick = e => {
       const target = e.target.closest('button')
       if (!target || target.classList.contains('active')) return
@@ -905,12 +931,14 @@ document.addEventListener('DOMContentLoaded', () => {
       GLOBAL_CONFIG.runtime && addRuntime()
       addLastPushDate()
       toggleCardCategory()
+      setCategoryBarActive()      // 自己加的，用于切换类别栏目
     }
 
     GLOBAL_CONFIG_SITE.pageType === 'home' && scrollDownInIndex()
     scrollFn()
 
     forPostFn()
+
     GLOBAL_CONFIG_SITE.pageType !== 'shuoshuo' && btf.switchComments(document)
     openMobileMenu()
   }
