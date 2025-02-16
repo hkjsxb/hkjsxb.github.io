@@ -289,18 +289,23 @@ div#archive {
 /* --------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* 鼠标样式 */
+/* 主题色：调整为更亮的白色，增强在黑夜背景下的可见性 */
+:root {
+  --theme-color: #FFFFFF; /* 白色 */
+}
+
 #cursor {
   position: fixed;
   width: 16px;
   height: 16px;
-  /* 这里改变跟随的底色 */
-  background: var(--theme-color);
+  background: var(--theme-color); /* 白色背景，亮度高 */
   border-radius: 8px;
-  opacity: 0.25;
+  opacity: 0.5; /* 提高透明度 */
   z-index: 10086;
   pointer-events: none;
   transition: 0.2s ease-in-out;
   transition-property: background, opacity, transform;
+  box-shadow: 0 0 8px var(--theme-color); /* 添加微弱发光效果，增强可见性 */
 }
 
 #cursor.hidden {
@@ -308,21 +313,13 @@ div#archive {
 }
 
 #cursor.hover {
-  opacity: 0.1;
+  opacity: 0.3;
   transform: scale(2.5);
-  -webkit-transform: scale(2.5);
-  -moz-transform: scale(2.5);
-  -ms-transform: scale(2.5);
-  -o-transform: scale(2.5);
 }
 
 #cursor.active {
-  opacity: 0.5;
+  opacity: 0.8;
   transform: scale(0.5);
-  -webkit-transform: scale(0.5);
-  -moz-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  -o-transform: scale(0.5);
 }
 /* --------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -349,9 +346,176 @@ div#archive {
 
 /* --------------------------------------------------------------------------------------------------------------------------------------*/
 
+.winbox {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.wb-body {
+  background-color: #e5f1f5;
+}
+
+.wb-full {
+  display: none;
+}
+
+.wb-min {
+  background-position: center;
+}
+
+[data-theme='dark'] .wb-body,
+[data-theme='dark'] #changeBgBox {
+  background: #333 !important;
+}
+
+.bgbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pimgbox,
+.imgbox,
+.box {
+  height: 100px;
+  width: 166px;
+  margin: 10px;
+  border-radius: 10px !important;
+  background-size: cover;
+}
+
+.pimgbox,
+.imgbox {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pimgbox {
+  height: 240px;
+}
+
+.imgbox {
+  height: 95px;
+}
+
+.box {
+  height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .pimgbox,
+  .imgbox,
+  .box {
+    height: 73px;
+    width: 135px;
+  }
+  .pimgbox {
+    height: 205px;
+  }
+  .wb-min {
+    display: none;
+  }
+  #changeBgBox .wb-body::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.font-settings {
+  margin-top: 20px;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+.swf:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  transition: 0.2s ease;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------*/
+/*自定义背景图片链接*/
+#pic-link {
+  width: 60%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#pic-link:focus {
+  border-color: #49b1f5;
+  outline: none;
+}
+
+/* Aplayer字体 */
+#article-container .aplayer {
+  font-family: var(--global-font) !important;
+}
+
+/* 背景图片链接输入框placeholder*/
+input#pic-link::-webkit-input-placeholder {
+  color: rgb(150, 150, 150);
+}
+
+input#pic-link {
+  width: 82%;
+  border-radius: 30px;
+  border: 1px solid var(--theme-color) !important;
+  padding: 5px 10px 5px 10px;
+  line-height: 2;
+  outline: 1px solid var(--theme-color) !important;
+}
 
 /* --------------------------------------------------------------------------------------------------------------------------------------*/
+/* 必应壁纸框 */
+#bingDayBox:hover,
+#bingHistoryBox:hover,
+#EEEDogBox:hover,
+#seovxBox:hover,
+#picsumBox:hover,
+#waiBizhiBox:hover,
+#btstuBox:hover,
+#unsplashBox:hover {
+  text-decoration: none !important;
+}
 
+.apiBox::before {
+  position: relative;
+  color: aliceblue;
+  border-radius: 5px;
+  top: 35px;
+  padding: 2px 5px;
+  background: #00000090;
+}
 
-
-/* --------------------------------------------------------------------------------------------------------------------------------------*/
+#bingDayBox::before {
+  left: 34px;
+  content: "必应每日壁纸";
+}
+#bingHistoryBox::before {
+  left: 34px;
+  content: "必应历史壁纸";
+}
+#EEEDogBox::before {
+  left: 20px;
+  content: "EEEDog动漫壁纸";
+}
+#seovxBox::before {
+  left: 30px;
+  content: "seovx美女壁纸";
+}
+#picsumBox::before {
+  left: 24px;
+  content: "picsum随机壁纸";
+}
+#waiBizhiBox::before {
+  left: 34px;
+  content: "小歪高清壁纸";
+}
+#btstuBox::before {
+  left: 34px;
+  content: "博天随机壁纸";
+}
+#unsplashBox::before {
+  left: 15px;
+  content: "Unsplash随机壁纸";
+}
