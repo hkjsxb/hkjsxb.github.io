@@ -773,33 +773,7 @@ document.addEventListener('DOMContentLoaded', () => {
         el.classList.toggle('active', index === activeIndex)
       })
     }
-
-
-     /**
-   * 自己写的，实现功能切换类别表
-   */ 
-  const setCategoryBarActive = () => {
-    const categoryBar = document.querySelector("#category-bar");
-    const currentPath = decodeURIComponent(window.location.pathname);
-    const isHomePage = currentPath === GLOBAL_CONFIG.root;
-
-    if (categoryBar) {
-        const categoryItems = categoryBar.querySelectorAll(".category-bar-item");
-        categoryItems.forEach(item => item.classList.remove("select"));
-
-        const activeItemId = isHomePage ? "category-bar-home" : currentPath.split("/").slice(-2, -1)[0];
-        const activeItem = document.getElementById(activeItemId);
-
-        if (activeItem) {
-            activeItem.classList.add("select");
-        }
-    }
-  };
-
-
-
-
-
+  
     const handleNavClick = e => {
       const target = e.target.closest('button')
       if (!target || target.classList.contains('active')) return
@@ -824,6 +798,28 @@ document.addEventListener('DOMContentLoaded', () => {
       btf.addEventListenerPjax(tabElement.lastElementChild, 'click', handleToTopClick(tabElement))
     })
   }
+
+     /**
+   * 自己写的，实现功能切换类别表
+   */ 
+ const setCategoryBarActive = () => {
+    const categoryBar = document.querySelector("#category-bar");
+    const currentPath = decodeURIComponent(window.location.pathname);
+    const isHomePage = currentPath === GLOBAL_CONFIG.root;
+
+    if (categoryBar) {
+        const categoryItems = categoryBar.querySelectorAll(".category-bar-item");
+        categoryItems.forEach(item => item.classList.remove("select"));
+
+        const activeItemId = isHomePage ? "category-bar-home" : currentPath.split("/").slice(-2, -1)[0];
+        const activeItem = document.getElementById(activeItemId);
+
+        if (activeItem) {
+            activeItem.classList.add("select");
+        }
+    }
+  }
+
 
   const toggleCardCategory = () => {
     const cardCategory = document.querySelector('#aside-cat-list.expandBtn')
