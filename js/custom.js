@@ -252,15 +252,15 @@ function createWinbox() {
 
       <div class="bgbox">
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)" class="pimgbox" onclick="changeBg('url(https://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://qniuyun.hkjsxb.xin/img/20250218133442913.jpg)" class="pimgbox" onclick="changeBg('url(http://qniuyun.hkjsxb.xin/img/20250218133442913.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://qniuyun.hkjsxb.xin/img/20250218133442914.jpg)" class="pimgbox" onclick="changeBg('url(http://qniuyun.hkjsxb.xin/img/20250218133442914.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://qniuyun.hkjsxb.xin/img/20250218133442915.jpg)" class="pimgbox" onclick="changeBg('url(http://qniuyun.hkjsxb.xin/img/20250218133442915.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://qniuyun.hkjsxb.xin/img/20250218133442916.jpg)" class="pimgbox" onclick="changeBg('url(http://qniuyun.hkjsxb.xin/img/20250218133442916.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://qniuyun.hkjsxb.xin/img/20250218133442917.jpg)" class="pimgbox" onclick="changeBg('url(http://qniuyun.hkjsxb.xin/img/20250218133442917.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://qniuyun.hkjsxb.xin/img/20250218133442918.jpg)" class="pimgbox" onclick="changeBg('url(http://qniuyun.hkjsxb.xin/img/20250218133442918.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://qniuyun.hkjsxb.xin/img/20250218133442919.jpg)" class="pimgbox" onclick="changeBg('url(http://qniuyun.hkjsxb.xin/img/20250218133442919.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://qniuyun.hkjsxb.xin/img/20250218133442920.jpg)" class="pimgbox" onclick="changeBg('url(http://qniuyun.hkjsxb.xin/img/20250218133442920.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://qniuyun.hkjsxb.xin/img/20250218133442921.jpg)" class="pimgbox" onclick="changeBg('url(http://qniuyun.hkjsxb.xin/img/20250218133442921.jpg)')"></a>
+        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://free4.yunpng.top/2025/02/18/67b430a45329f.jpg)" class="pimgbox" onclick="changeBg('url(https://free4.yunpng.top/2025/02/18/67b430a45329f.jpg)')"></a>
+        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://free4.yunpng.top/2025/02/18/67b430a6e21bd.jpg)" class="pimgbox" onclick="changeBg('url(https://free4.yunpng.top/2025/02/18/67b430a6e21bd.jpg)')"></a>
+        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://free4.yunpng.top/2025/02/18/67b430a90ae8e.jpg)" class="pimgbox" onclick="changeBg('url(https://free4.yunpng.top/2025/02/18/67b430a90ae8e.jpg)')"></a>
+        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://free4.yunpng.top/2025/02/18/67b430ab09aa1.jpg)" class="pimgbox" onclick="changeBg('url(https://free4.yunpng.top/2025/02/18/67b430ab09aa1.jpg)')"></a>
+        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://free4.yunpng.top/2025/02/18/67b430ac3e9eb.jpg)" class="pimgbox" onclick="changeBg('url(https://free4.yunpng.top/2025/02/18/67b430ac3e9eb.jpg)')"></a>
+        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://ooo.0x0.ooo/2025/02/18/OG9XCi.jpg)" class="pimgbox" onclick="changeBg('url(https://ooo.0x0.ooo/2025/02/18/OG9XCi.jpg)')"></a>
+        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.picui.cn/free/2025/02/18/67b43a43b94a7.jpg)" class="pimgbox" onclick="changeBg('url(https://img.picui.cn/free/2025/02/18/67b43a43b94a7.jpg)')"></a>
+        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.picui.cn/free/2025/02/18/67b43a4a4cf54.jpg)" class="pimgbox" onclick="changeBg('url(https://img.picui.cn/free/2025/02/18/67b43a4a4cf54.jpg)')"></a>
+        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.picui.cn/free/2025/02/18/67b43a4a4cfcd.jpg)" class="pimgbox" onclick="changeBg('url(https://img.picui.cn/free/2025/02/18/67b43a4a4cfcd.jpg)')"></a>
       </div>
 
       <h3>电脑壁纸</h3>
@@ -271,12 +271,12 @@ function createWinbox() {
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/img/2.jpg)" class="imgbox" onclick="changeBg('url(/img/2.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/img/3.jpg)" class="imgbox" onclick="changeBg('url(/img/3.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/img/4.jpg)" class="imgbox" onclick="changeBg('url(/img/4.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://qniuyun.hkjsxb.xin/1/20250218140300096.jpg)" class="imgbox" onclick="changeBg('url(http://qniuyun.hkjsxb.xin/1/20250218140300096.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://qniuyun.hkjsxb.xin/1/20250218140300097.jpg)" class="imgbox" onclick="changeBg('url(http://qniuyun.hkjsxb.xin/1/20250218140300097.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://qniuyun.hkjsxb.xin/1/20250218140300098.jpg)" class="imgbox" onclick="changeBg('url(http://qniuyun.hkjsxb.xin/1/20250218140300098.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://qniuyun.hkjsxb.xin/1/20250218140300099.jpg)" class="imgbox" onclick="changeBg('url(http://qniuyun.hkjsxb.xin/1/20250218140300099.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://qniuyun.hkjsxb.xin/1/20250218140300100.jpg)" class="imgbox" onclick="changeBg('url(http://qniuyun.hkjsxb.xin/1/20250218140300100.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://qniuyun.hkjsxb.xin/1/20250218140300101.jpg)" class="imgbox" onclick="changeBg('url(http://qniuyun.hkjsxb.xin/1/20250218140300101.jpg)')"></a>
+        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://ooo.0x0.ooo/2025/02/18/OGjOmp.jpg)" class="imgbox" onclick="changeBg('url(https://ooo.0x0.ooo/2025/02/18/OGjOmp.jpg)')"></a>
+        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://ooo.0x0.ooo/2025/02/18/OGjaYU.jpg)" class="imgbox" onclick="changeBg('url(https://ooo.0x0.ooo/2025/02/18/OGjaYU.jpg)')"></a>
+        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://ooo.0x0.ooo/2025/02/18/OGjqqY.jpg)" class="imgbox" onclick="changeBg('url(https://ooo.0x0.ooo/2025/02/18/OGjqqY.jpg)')"></a>
+        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.picui.cn/free/2025/02/18/67b43c62ad54a.jpg)" class="imgbox" onclick="changeBg('url(https://img.picui.cn/free/2025/02/18/67b43c62ad54a.jpg)')"></a>
+        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.picui.cn/free/2025/02/18/67b43bc246002.jpg)" class="imgbox" onclick="changeBg('url(https://img.picui.cn/free/2025/02/18/67b43bc246002.jpg)')"></a>
+        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.picui.cn/free/2025/02/18/67b43ae8c804d.jpg)" class="imgbox" onclick="changeBg('url(https://img.picui.cn/free/2025/02/18/67b43ae8c804d.jpg)')"></a>
       </div>
 
       <h3>渐变色</h3>
