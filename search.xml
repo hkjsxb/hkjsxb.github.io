@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>博客更新日志</title>
+      <link href="/post/19625.html"/>
+      <url>/post/19625.html</url>
+      
+        <content type="html"><![CDATA[<div id="postchat_postcontent"><h3 id="2025-年-2-月-8-日"><a href="#2025-年-2-月-8-日" class="headerlink" title="2025 年 2 月 8 日"></a>2025 年 2 月 8 日</h3><ul><li><strong>魔改字体</strong>：成功对博客字体进行了魔改，提升了视觉效果，相关教程可查看<a href="https://www.luxiyue.com/server/如何修改hexo主题：butterfly网站字体/">《如何修改 Hexo 主题 Butterfly 的字体》</a>。</li><li><strong>添加哔哩哔哩插件</strong>：添加了哔哩哔哩插件，版本为 8.1，相关内容可参考教程。该插件的使用方法和效果可点击以下链接了解：<ul><li><a href="https://gitcode.com/gh_mirrors/he/hexo-bilibili-bangumi/?utm_source=artical_gitcode&amp;index=bottom&amp;type=card&amp;webUrl&amp;isLogin=1">GitHub - he/hexo-bilibili-bangumi: hexo bilibili bangumi</a>;</li><li><a href="https://blog.csdn.net/gitblog_00392/article/details/144263442">Hexo bilibili 介绍及其常见问题解决 - CSDN</a>;</li></ul></li><li><strong>得到新域名</strong>：获得了新的域名“hkjsxb.xin”和“<a href="http://www.hkjsxb.xn--xin-9o0a./">www.hkjsxb.xin”。</a></li><li><strong>顶部加载进度条</strong>：为博客添加了顶部加载进度条，教程来自<a href="https://ll.sc.cn/posts/8e5e/">《给博客顶部添加进度条》</a>。</li></ul><h3 id="2025-年-2-月-9-日"><a href="#2025-年-2-月-9-日" class="headerlink" title="2025 年 2 月 9 日"></a>2025 年 2 月 9 日</h3><ul><li><strong>升级首页</strong>：对首页进行了升级，新增了首页分类、轮播卡片以及动画效果，升级教程参考<a href="https://blog.liushen.fun/posts/6af2a5bb/">One</a>。</li><li><strong>加载动画</strong>：对博客的加载动画进行了优化，相关内容可查看<a href="https://blog.anheyu.com/posts/52d8.html#butterfly-4-4-2-以下版本方案">蝶4.4.2 及以下版本方案</a>，魔改友情链接的升级教程来自<a href="https://akilar.top/posts/57291286/">阿卡林</a>。</li><li><strong>魔改友情链接</strong>：对友情链接进行了魔改，升级二次魔改教程参考<a href="https://blog.liushen.fun/posts/59fe844d/">刘神博客</a>。</li></ul><h3 id="2025-年-2-月-10-日"><a href="#2025-年-2-月-10-日" class="headerlink" title="2025 年 2 月 10 日"></a>2025 年 2 月 10 日</h3><ul><li><strong>朋友圈</strong>：新增了朋友圈功能，相关内容可查看<a href="https://blog.liushen.fun/posts/4dc716ec/">《添加朋友圈到首页》</a>。</li><li><strong>解决外链跳转问题</strong>：解决了外链跳转出现意外的问题，相关帖子来自<a href="https://blog.liushen.fun/posts/1dfd1f41/">刘神博客</a>。</li><li><strong>首页轮播图</strong>：新增了首页轮播图功能，相关教程来自<a href="https://dasi.net.cn/posts/5f3e08e1/">太阳迷雾</a></li></ul><h3 id="2025-年-2-月-11-日"><a href="#2025-年-2-月-11-日" class="headerlink" title="2025 年 2 月 11 日"></a>2025 年 2 月 11 日</h3><ul><li><strong>支持 al 摘要</strong>：添加了文章的 al 摘要功能，相关教程来自<a href="https://blog.zhheo.com/p/ec57d8b2.html">《Hexo 博客添加文章摘要》</a>。</li><li><strong>稿件工具</strong>：相关的稿件工具可访问<a href="https://postsummary.zhheo.com/">文章摘要</a>。</li><li><strong>修缮版</strong>：对相关问题进行了修缮。</li><li><strong>升级留言板</strong>：对留言板进行了升级，相关内容来自<a href="https://www.fomal.cc/posts/eec9786.html">非凡博客</a>，并同时对修缮背景、页脚徽标、侧边栏 cards 个人信息卡片渐变色进行了升级。</li><li><strong>增加页面样式调节</strong>：删除了 4.6 版本，增加了页面样式调节功能，相关内容来自<a href="https://www.fomal.cc/posts/5389e93f.html">非凡博客</a>。</li><li><strong>友联申请</strong>：新增了友联申请功能。</li></ul><h3 id="2025-年-2-月-13-日"><a href="#2025-年-2-月-13-日" class="headerlink" title="2025 年 2 月 13 日"></a>2025 年 2 月 13 日</h3><ul><li><strong>切换背景功能</strong>：添加了切换背景功能，并修缮了相关 bug，相关内容来自<a href="https://blog.leonus.cn/2022/bg2.html">良草的博客</a>。</li><li><strong>增加控制台</strong>：新增了控制台，可以切换背景并选择字体样式，相关内容来自<a href="https://www.fomal.cc/posts/9ac969bb.html">非凡博客</a>。</li><li><strong>最新稳定版本</strong>：新增了随机文章封面和 api 功能，相关教程来自<a href="https://aizhiqian.github.io/posts/ecf98aaa/">只会爱千年的博客</a>。</li><li><strong>修缮版权</strong>：对版权问题进行了修缮，相关内容参考<a href="https://www.fomal.cc/posts/5389e93f.html">非凡博客</a>。</li><li><strong>动态分类条</strong>：新增了动态分类条功能，相关内容来自<a href="https://blog.liushen.fun/posts/a64defb4/">刘神博客</a>。</li><li><strong>修正 problem 示例</strong>：修正了问题使用的示例，保障了其正常运行。</li><li><strong>修复检测不到问题</strong>：修复了安全狗（safego）检测不到相关广告和风险问题。</li><li><strong>完善关于页面</strong>：对关于页面进行了完善，相关内容来自<a href="https://blog.liushen.fun/posts/8f52e732/">刘神博客</a>。</li><li><strong>修复移动菜单不显示问题</strong>：解决了移动菜单不显示的问题。</li></ul></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网站建设 </category>
+          
+          <category> 日志 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>HexoPress：一款能管理 Hexo 博客文章的客户端</title>
       <link href="/post/21190.html"/>
       <url>/post/21190.html</url>

@@ -1,0 +1,418 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>博客更新日志 | 码巢</title><meta name="author" content="hkjsxb"><meta name="copyright" content="hkjsxb"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="2025 年 2 月 8 日 魔改字体：成功对博客字体进行了魔改，提升了视觉效果，相关教程可查看《如何修改 Hexo 主题 Butterfly 的字体》。 添加哔哩哔哩插件：添加了哔哩哔哩插件，版本为 8.1，相关内容可参考教程。该插件的使用方法和效果可点击以下链接了解： GitHub - he/hexo-bilibili-bangumi: hexo bilibili bangumi; Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="博客更新日志">
+<meta property="og:url" content="http://hkjsxb.xin/post/19625.html">
+<meta property="og:site_name" content="码巢">
+<meta property="og:description" content="2025 年 2 月 8 日 魔改字体：成功对博客字体进行了魔改，提升了视觉效果，相关教程可查看《如何修改 Hexo 主题 Butterfly 的字体》。 添加哔哩哔哩插件：添加了哔哩哔哩插件，版本为 8.1，相关内容可参考教程。该插件的使用方法和效果可点击以下链接了解： GitHub - he/hexo-bilibili-bangumi: hexo bilibili bangumi; Hexo">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://api.asxe.vip/scenery.php?7301">
+<meta property="article:published_time" content="2025-02-20T03:02:51.000Z">
+<meta property="article:modified_time" content="2025-02-20T03:26:32.000Z">
+<meta property="article:author" content="hkjsxb">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://api.asxe.vip/scenery.php?7301"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "博客更新日志",
+  "url": "http://hkjsxb.xin/post/19625.html",
+  "image": "https://api.asxe.vip/scenery.php?7301",
+  "datePublished": "2025-02-20T03:02:51.000Z",
+  "dateModified": "2025-02-20T03:26:32.000Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "hkjsxb",
+      "url": "http://hkjsxb.xin/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://hkjsxb.xin/post/19625.html"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//busuanzi.ibruce.info"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":-1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: hkjsxb","link":"链接: ","source":"来源: 码巢","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '博客更新日志',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nextapps-de/winbox/dist/winbox.bundle.min.css"></head><body><span id="fps"></span><link rel="stylesheet" href="/css/universe.css"><link rel="stylesheet" href="/css/blx.css"><link rel="stylesheet" href="/css/jzdh-loading.css"><link rel="stylesheet" href="https://ai.tianli0.top/static/public/tianli_gpt.min.css"><link rel="stylesheet" href="/fonts/font.css"><link rel="stylesheet" href="/css/dhl.css"><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<link rel="stylesheet" href="/css/runtime.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><div class="loading-img"></div><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+btf.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
+
+</script><link rel="stylesheet" href="/css/progress_bar.css"><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg" style="background-image: url(/img/bg.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-link"></i><span> 百宝箱</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/hexo-series-navigation/"><i class="fa-fw fas fa-wrench"></i><span> Hexo系列魔改导航</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-gamepad"></i><span> 休闲</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fas fa-archive"></i><span> 追番</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-users"></i><span> 友人圈</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/friend-circle/"><i class="fa-fw fas fa-link"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></li><li><a class="site-page child" href="/comments/"><i class="fa-fw fas fa-comment-alt"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 我的</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://dweb.hkjsxb.xin/"><i class="fa-fw fas fa-compass"></i><span> 导航</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url(https://api.asxe.vip/scenery.php?7301);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/img/logo%20(2).png" alt="Logo"><span class="site-name">码巢</span></a><a class="nav-page-title" href="/"><span class="site-name">博客更新日志</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-link"></i><span> 百宝箱</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/hexo-series-navigation/"><i class="fa-fw fas fa-wrench"></i><span> Hexo系列魔改导航</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-gamepad"></i><span> 休闲</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fas fa-archive"></i><span> 追番</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-users"></i><span> 友人圈</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/friend-circle/"><i class="fa-fw fas fa-link"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></li><li><a class="site-page child" href="/comments/"><i class="fa-fw fas fa-comment-alt"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 我的</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://dweb.hkjsxb.xin/"><i class="fa-fw fas fa-compass"></i><span> 导航</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">博客更新日志</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-02-20T03:02:51.000Z" title="发表于 2025-02-20 11:02:51">2025-02-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-02-20T03:26:32.000Z" title="更新于 2025-02-20 11:26:32">2025-02-20</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/%E6%97%A5%E5%BF%97/">日志</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><div id="postchat_postcontent"><h3 id="2025-年-2-月-8-日"><a href="#2025-年-2-月-8-日" class="headerlink" title="2025 年 2 月 8 日"></a>2025 年 2 月 8 日</h3><ul>
+<li><strong>魔改字体</strong>：成功对博客字体进行了魔改，提升了视觉效果，相关教程可查看<a target="_blank" rel="external nofollow noopener noreferrer" href="/go.html?u=aHR0cHM6Ly93d3cubHV4aXl1ZS5jb20vc2VydmVyL+WmguS9leS/ruaUuWhleG/kuLvpopjvvJpidXR0ZXJmbHnnvZHnq5nlrZfkvZMv">《如何修改 Hexo 主题 Butterfly 的字体》</a>。</li>
+<li><strong>添加哔哩哔哩插件</strong>：添加了哔哩哔哩插件，版本为 8.1，相关内容可参考教程。该插件的使用方法和效果可点击以下链接了解：<ul>
+<li><a target="_blank" rel="external nofollow noopener noreferrer" href="/go.html?u=aHR0cHM6Ly9naXRjb2RlLmNvbS9naF9taXJyb3JzL2hlL2hleG8tYmlsaWJpbGktYmFuZ3VtaS8/dXRtX3NvdXJjZT1hcnRpY2FsX2dpdGNvZGUmaW5kZXg9Ym90dG9tJnR5cGU9Y2FyZCZ3ZWJVcmwmaXNMb2dpbj0x">GitHub - he/hexo-bilibili-bangumi: hexo bilibili bangumi</a>;</li>
+<li><a target="_blank" rel="external nofollow noopener noreferrer" href="/go.html?u=aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2dpdGJsb2dfMDAzOTIvYXJ0aWNsZS9kZXRhaWxzLzE0NDI2MzQ0Mg==">Hexo bilibili 介绍及其常见问题解决 - CSDN</a>;</li>
+</ul>
+</li>
+<li><strong>得到新域名</strong>：获得了新的域名“hkjsxb.xin”和“<a target="_blank" rel="external nofollow noopener noreferrer" href="/go.html?u=aHR0cDovL3d3dy5oa2pzeGIueG4tLXhpbi05bzBhLi8=">www.hkjsxb.xin”。</a></li>
+<li><strong>顶部加载进度条</strong>：为博客添加了顶部加载进度条，教程来自<a target="_blank" rel="external nofollow noopener noreferrer" href="/go.html?u=aHR0cHM6Ly9sbC5zYy5jbi9wb3N0cy84ZTVlLw==">《给博客顶部添加进度条》</a>。</li>
+</ul>
+<h3 id="2025-年-2-月-9-日"><a href="#2025-年-2-月-9-日" class="headerlink" title="2025 年 2 月 9 日"></a>2025 年 2 月 9 日</h3><ul>
+<li><strong>升级首页</strong>：对首页进行了升级，新增了首页分类、轮播卡片以及动画效果，升级教程参考<a target="_blank" rel="noopener" href="https://blog.liushen.fun/posts/6af2a5bb/">One</a>。</li>
+<li><strong>加载动画</strong>：对博客的加载动画进行了优化，相关内容可查看<a target="_blank" rel="external nofollow noopener noreferrer" href="/go.html?u=aHR0cHM6Ly9ibG9nLmFuaGV5dS5jb20vcG9zdHMvNTJkOC5odG1sI2J1dHRlcmZseS00LTQtMi3ku6XkuIvniYjmnKzmlrnmoYg=">蝶4.4.2 及以下版本方案</a>，魔改友情链接的升级教程来自<a target="_blank" rel="external nofollow noopener noreferrer" href="/go.html?u=aHR0cHM6Ly9ha2lsYXIudG9wL3Bvc3RzLzU3MjkxMjg2Lw==">阿卡林</a>。</li>
+<li><strong>魔改友情链接</strong>：对友情链接进行了魔改，升级二次魔改教程参考<a target="_blank" rel="noopener" href="https://blog.liushen.fun/posts/59fe844d/">刘神博客</a>。</li>
+</ul>
+<h3 id="2025-年-2-月-10-日"><a href="#2025-年-2-月-10-日" class="headerlink" title="2025 年 2 月 10 日"></a>2025 年 2 月 10 日</h3><ul>
+<li><strong>朋友圈</strong>：新增了朋友圈功能，相关内容可查看<a target="_blank" rel="noopener" href="https://blog.liushen.fun/posts/4dc716ec/">《添加朋友圈到首页》</a>。</li>
+<li><strong>解决外链跳转问题</strong>：解决了外链跳转出现意外的问题，相关帖子来自<a target="_blank" rel="noopener" href="https://blog.liushen.fun/posts/1dfd1f41/">刘神博客</a>。</li>
+<li><strong>首页轮播图</strong>：新增了首页轮播图功能，相关教程来自<a target="_blank" rel="external nofollow noopener noreferrer" href="/go.html?u=aHR0cHM6Ly9kYXNpLm5ldC5jbi9wb3N0cy81ZjNlMDhlMS8=">太阳迷雾</a></li>
+</ul>
+<h3 id="2025-年-2-月-11-日"><a href="#2025-年-2-月-11-日" class="headerlink" title="2025 年 2 月 11 日"></a>2025 年 2 月 11 日</h3><ul>
+<li><strong>支持 al 摘要</strong>：添加了文章的 al 摘要功能，相关教程来自<a target="_blank" rel="external nofollow noopener noreferrer" href="/go.html?u=aHR0cHM6Ly9ibG9nLnpoaGVvLmNvbS9wL2VjNTdkOGIyLmh0bWw=">《Hexo 博客添加文章摘要》</a>。</li>
+<li><strong>稿件工具</strong>：相关的稿件工具可访问<a target="_blank" rel="external nofollow noopener noreferrer" href="/go.html?u=aHR0cHM6Ly9wb3N0c3VtbWFyeS56aGhlby5jb20v">文章摘要</a>。</li>
+<li><strong>修缮版</strong>：对相关问题进行了修缮。</li>
+<li><strong>升级留言板</strong>：对留言板进行了升级，相关内容来自<a target="_blank" rel="external nofollow noopener noreferrer" href="/go.html?u=aHR0cHM6Ly93d3cuZm9tYWwuY2MvcG9zdHMvZWVjOTc4Ni5odG1s">非凡博客</a>，并同时对修缮背景、页脚徽标、侧边栏 cards 个人信息卡片渐变色进行了升级。</li>
+<li><strong>增加页面样式调节</strong>：删除了 4.6 版本，增加了页面样式调节功能，相关内容来自<a target="_blank" rel="external nofollow noopener noreferrer" href="/go.html?u=aHR0cHM6Ly93d3cuZm9tYWwuY2MvcG9zdHMvNTM4OWU5M2YuaHRtbA==">非凡博客</a>。</li>
+<li><strong>友联申请</strong>：新增了友联申请功能。</li>
+</ul>
+<h3 id="2025-年-2-月-13-日"><a href="#2025-年-2-月-13-日" class="headerlink" title="2025 年 2 月 13 日"></a>2025 年 2 月 13 日</h3><ul>
+<li><strong>切换背景功能</strong>：添加了切换背景功能，并修缮了相关 bug，相关内容来自<a target="_blank" rel="external nofollow noopener noreferrer" href="/go.html?u=aHR0cHM6Ly9ibG9nLmxlb251cy5jbi8yMDIyL2JnMi5odG1s">良草的博客</a>。</li>
+<li><strong>增加控制台</strong>：新增了控制台，可以切换背景并选择字体样式，相关内容来自<a target="_blank" rel="external nofollow noopener noreferrer" href="/go.html?u=aHR0cHM6Ly93d3cuZm9tYWwuY2MvcG9zdHMvOWFjOTY5YmIuaHRtbA==">非凡博客</a>。</li>
+<li><strong>最新稳定版本</strong>：新增了随机文章封面和 api 功能，相关教程来自<a target="_blank" rel="external nofollow noopener noreferrer" href="/go.html?u=aHR0cHM6Ly9haXpoaXFpYW4uZ2l0aHViLmlvL3Bvc3RzL2VjZjk4YWFhLw==">只会爱千年的博客</a>。</li>
+<li><strong>修缮版权</strong>：对版权问题进行了修缮，相关内容参考<a target="_blank" rel="external nofollow noopener noreferrer" href="/go.html?u=aHR0cHM6Ly93d3cuZm9tYWwuY2MvcG9zdHMvNTM4OWU5M2YuaHRtbA==">非凡博客</a>。</li>
+<li><strong>动态分类条</strong>：新增了动态分类条功能，相关内容来自<a target="_blank" rel="noopener" href="https://blog.liushen.fun/posts/a64defb4/">刘神博客</a>。</li>
+<li><strong>修正 problem 示例</strong>：修正了问题使用的示例，保障了其正常运行。</li>
+<li><strong>修复检测不到问题</strong>：修复了安全狗（safego）检测不到相关广告和风险问题。</li>
+<li><strong>完善关于页面</strong>：对关于页面进行了完善，相关内容来自<a target="_blank" rel="noopener" href="https://blog.liushen.fun/posts/8f52e732/">刘神博客</a>。</li>
+<li><strong>修复移动菜单不显示问题</strong>：解决了移动菜单不显示的问题。</li>
+</ul>
+</div></article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>博客更新日志</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="http://hkjsxb.xin/post/19625.html">http://hkjsxb.xin/post/19625.html</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a"><h>作者</h><div class="post-copyright-cc-info"><h>hkjsxb</h></div></div><div class="post-copyright-c"><h>发布于</h><div class="post-copyright-cc-info"><h>2025-02-20</h></div></div><div class="post-copyright-u"><h>更新于</h><div class="post-copyright-cc-info"><h>2025-02-20</h></div></div><div class="post-copyright-c"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="https://api.asxe.vip/scenery.php?7301" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer=""></script></div></div><nav class="pagination-post" id="pagination"></nav><hr class="custom-hr"><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="author-info-name">hkjsxb</div><div class="author-info-description">这是一个有关于技术分享的巢穴</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/hkjsxb"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/hkjsxb" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:hkjsxb@163.com" target="_blank" title="Email"><i class="fas fa-envelope-open-text"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><center><b>--- 主域名 ---<br><a href="https://hkjsxb.xin" title="此线路部署于Github" class="anno_content"><font color="#5ea6e5">hkjsxb.xin</font></a><br>--- 备用域名 ---<br><a target="_blank" rel="noopener" href="https://www.hkjsxb.xin" title="此线路部署于Vercel" class="anno_content"><font color="#5ea6e5">www.hkjsxb.xin</font></a><br>🍧</b></center></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#2025-%E5%B9%B4-2-%E6%9C%88-8-%E6%97%A5"><span class="toc-number">1.</span> <span class="toc-text">2025 年 2 月 8 日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2025-%E5%B9%B4-2-%E6%9C%88-9-%E6%97%A5"><span class="toc-number">2.</span> <span class="toc-text">2025 年 2 月 9 日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2025-%E5%B9%B4-2-%E6%9C%88-10-%E6%97%A5"><span class="toc-number">3.</span> <span class="toc-text">2025 年 2 月 10 日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2025-%E5%B9%B4-2-%E6%9C%88-11-%E6%97%A5"><span class="toc-number">4.</span> <span class="toc-text">2025 年 2 月 11 日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2025-%E5%B9%B4-2-%E6%9C%88-13-%E6%97%A5"><span class="toc-number">5.</span> <span class="toc-text">2025 年 2 月 13 日</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/post/19625.html" title="博客更新日志"><img src="https://api.asxe.vip/scenery.php?7301" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="博客更新日志"></a><div class="content"><a class="title" href="/post/19625.html" title="博客更新日志">博客更新日志</a><time datetime="2025-02-20T03:02:51.000Z" title="发表于 2025-02-20 11:02:51">2025-02-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/21190.html" title="HexoPress：一款能管理 Hexo 博客文章的客户端"><img src="https://api.lincloud.pro/image/view/?5630" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HexoPress：一款能管理 Hexo 博客文章的客户端"></a><div class="content"><a class="title" href="/post/21190.html" title="HexoPress：一款能管理 Hexo 博客文章的客户端">HexoPress：一款能管理 Hexo 博客文章的客户端</a><time datetime="2025-02-15T07:47:09.000Z" title="发表于 2025-02-15 15:47:09">2025-02-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/62052.html" title="使用 HBuilderX将 Hexo + Butterfly 生成的个人网站打包为移动应用（App）"><img src="https://api.lincloud.pro/image/view/?8276" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="使用 HBuilderX将 Hexo + Butterfly 生成的个人网站打包为移动应用（App）"></a><div class="content"><a class="title" href="/post/62052.html" title="使用 HBuilderX将 Hexo + Butterfly 生成的个人网站打包为移动应用（App）">使用 HBuilderX将 Hexo + Butterfly 生成的个人网站打包为移动应用（App）</a><time datetime="2025-02-15T07:37:16.000Z" title="发表于 2025-02-15 15:37:16">2025-02-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/60568.html" title="建立我的hexo + butterfly博客网站历程"><img src="https://api.asxe.vip/scenery.php?4728" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="建立我的hexo + butterfly博客网站历程"></a><div class="content"><a class="title" href="/post/60568.html" title="建立我的hexo + butterfly博客网站历程">建立我的hexo + butterfly博客网站历程</a><time datetime="2025-02-14T05:06:33.000Z" title="发表于 2025-02-14 13:06:33">2025-02-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/49283.html" title="hexo博客文章第一次该怎样创建？"><img src="https://myhkw.cn/open/img/mojave?4189" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo博客文章第一次该怎样创建？"></a><div class="content"><a class="title" href="/post/49283.html" title="hexo博客文章第一次该怎样创建？">hexo博客文章第一次该怎样创建？</a><time datetime="2025-02-14T03:16:54.000Z" title="发表于 2025-02-14 11:16:54">2025-02-14</time></div></div></div></div><div class="card-widget card-map"><div class="card-content"><div class="item-headline"><i class="fa fa-globe-asia" aria-hidden="true"></i><span>访客地图</span></div><script id="clstr_globe" type="text/javascript" defer="defer" src="//clustrmaps.com/globe.js?d=wLXuEaopa8nrr1FDJRrArPEYHqoqLlWmr8DpmUAo9hw"></script></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">©2024 - 2025 By hkjsxb</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button type="button" title="控制台" onclick="toggleWinbox()"><i class="fas fa-display"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://abc.hkjsxb.xin/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  const init = (el = document, path = location.pathname) => {
+    twikoo.init({
+      el: el.querySelector('#twikoo-wrap'),
+      envId: 'https://abc.hkjsxb.xin/',
+      region: '',
+      onCommentLoaded: () => {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      },
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || path
+    })
+
+    
+
+    isShuoshuo && (window.shuoshuoComment.destroyTwikoo = () => {
+      if (el.children.length) {
+        el.innerHTML = ''
+        el.classList.add('no-comment')
+      }
+    })
+  }
+
+  const loadTwikoo = (el, path) => {
+    if (typeof twikoo === 'object') setTimeout(() => init(el, path), 0)
+    else btf.getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(() => init(el, path))
+  }
+
+  if (isShuoshuo) {
+    'Twikoo' === 'Twikoo'
+      ? window.shuoshuoComment = { loadComment: loadTwikoo }
+      : window.loadOtherComment = loadTwikoo
+    return
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script></div><script src="https://cdn.jsdelivr.net/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script><script async="" src="/js/fps.js"></script><script defer="" src="/js/cursor.js"></script><canvas id="universe"></canvas><script defer="" src="/js/universe.js"></script><script>let tianliGPT_postSelector = '\#post \#article-container';let tianliGPT_key = '5Q5mpqRK5DkwT1X9Gi5e';</script><script src="https://ai.tianli0.top/static/public/tianli_gpt.min.js"></script><script src="/js/custom.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zindex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"]):not([href="/music/"]):not([href="/no-pjax/"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      pjax.loadUrl('/404.html')
+    }
+  })
+})()</script><script async="" data-pjax="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"></div></div><hr><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><!-- hexo injector body_end start --><script data-pjax="">
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo" title=""><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题版本Butterfly_v5.3。1" title=""><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" data-title="本站采用多线部署，备用线路托管于Vercel" title=""><img src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&amp;logo=Vercel" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title=""><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title=""><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async="" src="/js/runtime.js"></script><script data-pjax="">
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;post/62052.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://api.lincloud.pro/image/view/?8276" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-02-15</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;post/62052.html&quot;);" href="javascript:void(0);" alt="">使用 HBuilderX将 Hexo + Butterfly 生成的个人网站打包为移动应用（App）</a><div class="blog-slider__text">想一个默认描述好难的！</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;post/62052.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;post/21190.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://api.lincloud.pro/image/view/?5630" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-02-15</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;post/21190.html&quot;);" href="javascript:void(0);" alt="">HexoPress：一款能管理 Hexo 博客文章的客户端</a><div class="blog-slider__text">想一个默认描述好难的！</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;post/21190.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;post/60568.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://api.asxe.vip/scenery.php?4728" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-02-14</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;post/60568.html&quot;);" href="javascript:void(0);" alt="">建立我的hexo + butterfly博客网站历程</a><div class="blog-slider__text">网站建设日志</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;post/60568.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;post/49283.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://myhkw.cn/open/img/mojave?4189" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-02-14</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;post/49283.html&quot;);" href="javascript:void(0);" alt="">hexo博客文章第一次该怎样创建？</a><div class="blog-slider__text">Hexo第一次写博客</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;post/49283.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer="" src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer="" data-pjax="" src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><script async="" src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end -->
+    <link rel="stylesheet" href="https://ai.tianli0.top/static/public/postChatUser_summary.min.css">
+    <script>
+        let tianliGPT_key = 'iUHJozBpERk';
+        let tianliGPT_postSelector = '#postchat_postcontent';
+        let tianliGPT_Title = 'AL摘要';
+        let tianliGPT_postURL = '/^https?://[^/]+/[0-9]{4}/[0-9]{2}/[0-9]{2}/';
+        let tianliGPT_blacklist = '';
+        let tianliGPT_wordLimit = '100';
+        let tianliGPT_typingAnimate = true;
+        let tianliGPT_theme = 'default';
+        var postChatConfig = {
+          backgroundColor: "#3e86f6",
+          bottom: "16px",
+          left: "16px",
+          fill: "#FFFFFF",
+          width: "44px",
+          frameWidth: "375px",
+          frameHeight: "600px",
+          defaultInput: true,
+          upLoadWeb: true,
+          showInviteLink: true,
+          userTitle: "PostChat",
+          userDesc: "如果你对网站的内容有任何疑问，可以来问我哦～",
+          addButton: true,
+          beginningText: "这篇文章介绍了",
+          userIcon: "https://ai.tianli0.top/static/img/PostChat.webp",
+          userMode: "magic",
+          defaultChatQuestions: ["你好","你是谁"],
+          defaultSearchQuestions: ["视频压缩","设计"]
+        };
+    </script>
+    <script data-postchat_key="iUHJozBpERk" src="https://ai.tianli0.top/static/public/tianli_gpt.min.js"></script>
+  </body></html>
