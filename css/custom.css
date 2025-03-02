@@ -520,3 +520,124 @@ input#pic-link {
   content: "Unsplash随机壁纸";
 }
 
+/*****************************************************************************/
+@font-face {
+  font-family: "iconfont"; /* Project id 4842813 */
+  /* Color fonts */
+  src: 
+       url('//at.alicdn.com/t/c/font_4842813_wpimixz3uej.woff2?t=1740817400908') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4842813_wpimixz3uej.woff?t=1740817400908') format('woff'),
+       url('//at.alicdn.com/t/c/font_4842813_wpimixz3uej.ttf?t=1740817400908') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-zhuye:before {
+  content: "\e663";
+}
+
+.icon-zhuye1:before {
+  content: "\e689";
+}
+
+.icon-zhuye2:before {
+  content: "\e608";
+}
+
+.icon-bilibili:before {
+  content: "\e723";
+}
+
+.icon-jishuboke:before {
+  content: "\e74e";
+}
+
+.icon-jiaoliushequ:before {
+  content: "\e66a";
+}
+
+.icon-wode:before {
+  content: "\e613";
+}
+
+.icon-biaoqian:before {
+  content: "\e742";
+}
+
+.icon-1:before {
+  content: "\e601";
+}
+
+.icon-daohang:before {
+  content: "\e88a";
+}
+
+.icon-wodezhuifan:before {
+  content: "\e6d8";
+}
+
+.icon-fenlei:before {
+  content: "\e603";
+}
+
+.icon-ziyuan:before {
+  content: "\e606";
+}
+
+.icon-biaoqian1:before {
+  content: "\e628";
+}
+
+.icon-biaoqian2:before {
+  content: "\e615";
+}
+
+.icon-TIFFANYSROOM_huaban:before {
+  content: "\e771";
+}
+
+.icon-tubiaozhizuomoban:before {
+  content: "\e620";
+}
+
+.icon-xiangce:before {
+  content: "\e604";
+}
+
+.icon-shejiaotubiao-38:before {
+  content: "\e647";
+}
+
+.icon-liuyanban:before {
+  content: "\e684";
+}
+
+.icon-huangse_liuyanban:before {
+  content: "\e650";
+}
+
+.icon-lunwenguidangguanli:before {
+  content: "\e6c0";
+}
+
+.icon-wenzhang:before {
+  content: "\ec64";
+}
+
+.icon-yingshi:before {
+  content: "\10081";
+}
+
+.icon-biaoqian3:before {
+  content: "\e6e1";
+}
+
+.icon-baibaoxiang:before {
+  content: "\e6d2";
+}
