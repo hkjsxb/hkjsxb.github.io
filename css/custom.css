@@ -641,3 +641,377 @@ input#pic-link {
 .icon-baibaoxiang:before {
   content: "\e6d2";
 }
+
+
+
+
+/********888888888888888888888888*/
+
+/* 页脚 */
+#footer {
+    background: linear-gradient(180deg, transparent 0, var(--card-bg) 60%);
+  }
+  
+  #footer::before {
+    display: none;
+  }
+  
+  #footer #footer-wrap {
+    padding: 0;
+    color: var(--text-highlight-color);
+  }
+  
+  #footer #footer-banner {
+    background: var(--tab-botton-bg);
+    border: var(--card-border);
+  }
+  
+  #footer #footer-banner #footer-banner-container a {
+    margin: 0 .5rem;
+    font-weight: bold;
+  }
+  
+  #footer #footer-banner #footer-banner-container {
+    padding: 1rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between !important;
+  }
+  
+  #footer-wrap a {
+    color: var(--text-highlight-color);
+  }
+  
+  #footer-wrap a:hover {
+    color: var(--theme-color) !important;
+  }
+  
+  #footer #footer-group-container {
+    display: flex;
+    margin: 1rem auto;
+  }
+  
+  #footer #footer-group-container .footer-group {
+    margin: 0 auto;
+    min-width: 100px;
+    max-width: 185px;
+  }
+  
+  #footer #footer-group-container .footer-group .footer-group-title {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  #footer #footer-group-container .footer-group .footer-group-item {
+    display: block;
+  }
+  
+  #footer #footer-group-container .footer-group#footer-group-flink .footer-group-title i {
+    font-size: 80%;
+    margin-left: .3em;
+    opacity: .8;
+    cursor: var(--pointer-cursor), pointer !important;
+  }
+  
+  #footer #footer-social-container {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  #footer #footer-social-container .footer-social-img {
+    width: 55px;
+    height: 55px;
+    margin: 0 2%;
+    border-radius: 50%;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  
+  #footer #footer-social-container .footer-social-icon {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin: 0 1.5%;
+    color: var(--text-highlight-color);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  
+  #footer #footer-social-container .footer-social-img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+  
+    #footer #footer-group-container,
+    #footer #footer-social-container {
+      display: none;
+    }
+  
+    #footer #footer-banner #footer-banner-container {
+      display: block;
+    }
+  }
+
+  /* 页脚按钮 */
+#footer_button {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin: 0;
+  padding: 2rem 0 0 0;
+}
+
+#footer_button i {
+  font-size: 1.6rem;
+  transition: .3s;
+  line-height: 1.3rem;
+  height: 1.3rem;
+}
+
+.buttons {
+  display: grid;
+  width: 50%;
+  padding: 0;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(5,1fr);
+}
+
+.buttons .icon {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  padding: 5px;
+  margin: 0px;
+  width: 50px;
+  height: 50px;
+  box-shadow: 1px 10px 10px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.buttons a {
+  display: block;
+  height: 28px;
+  width: 26px;
+  font-size:18px;
+  line-height: 35px;
+  color: var(--font-color);
+}
+
+.buttons .bubble {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.buttons .bubble::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -4px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.buttons .icon:hover .bubble {
+  top: -15px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.buttons .icon:hover span,
+.buttons .icon:hover .bubble {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.buttons .Email:hover,
+.buttons .Email:hover .bubble,
+.buttons .Email:hover .bubble::before {
+  background: #1877F2;
+  color: #ffffff;
+}
+.buttons .Email:hover a {
+  color: #ffffff;
+}
+
+.buttons .QQ:hover,
+.buttons .QQ:hover .bubble,
+.buttons .QQ:hover .bubble::before {
+  background: #f30404;
+  color: #ffffff;
+}
+.buttons .QQ:hover a {
+  color: #ffffff;
+}
+
+
+img.footer_mini_logo {
+  width: 50px;
+  height: 50px;
+  margin: 0 1rem;
+  filter: drop-shadow(0 0 8px  #39c5bb)!important;
+  cursor: pointer;
+  transition: cubic-bezier(0, 0, 0, 1.29) .5s  
+  
+}
+
+.buttons .github:hover,
+.buttons .github:hover .bubble,
+.buttons .github:hover .bubble::before {
+  background: #090909;
+  color: #ffffff;
+}
+.buttons .github:hover a {
+  color: #ffffff;
+}
+
+.buttons .steam:hover,
+.buttons .steam:hover .bubble,
+.buttons .steam:hover .bubble::before {
+  background: #064980;
+  color: #ffffff;
+}
+.buttons .steam:hover a {
+  color: #ffffff;
+}
+
+/* 自适应 */
+
+@media screen and (max-width: 780px) {
+  .buttons {
+      width: 80%;
+  }
+}
+
+@media screen and (max-width: 1450px) and (min-width: 780px) {
+  .buttons {
+      width: 60%;
+  }
+}
+
+
+
+/********8888888888888888888888888888888******************************/
+/*/* 首页文章&双栏设置 */
+/*#recent-posts .recent-post-item {
+  height: 21rem;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#recent-posts .recent-post-item:not(:first-child) {
+  margin-top: unset;
+}
+
+#recent-posts>.recent-post-item .post_cover.right {
+  order: unset;
+  -webkit-order: unset;
+  -ms-flex-order: unset;
+  -o-box-ordinal-group: unset;
+  -moz-box-ordinal-group: unset;
+  -webkit-box-ordinal-group: unset;
+}
+
+@media screen and (min-width: 769px) {
+  #recent-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #recent-posts .recent-post-item {
+    width: calc(50% - .5rem);
+  }
+}
+
+#recent-posts>.recent-post-item .post_cover {
+  position: relative;
+  height: 75%;
+  width: 100%;
+}
+
+#recent-posts>.recent-post-item>.recent-post-info {
+  height: 25%;
+  width: 100%;
+  padding: .6rem .8rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#recent-posts>.recent-post-item>.recent-post-info>.article-title {
+  order: -1;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  -o-box-ordinal-group: -1;
+  -moz-box-ordinal-group: -1;
+  -webkit-box-ordinal-group: -1;
+}
+
+
+
+#recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap {
+  color: var(--font-color);
+  margin: 0;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+#recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap>.article-meta a {
+  color: var(--font-color);
+  padding: .3em;
+  border-radius: .4em;
+}
+
+#recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap>.article-meta.categories {
+  border-radius: .4em;
+  backdrop-filter: var(--backdrop-filter);
+  background: var(--lee-maskbg);
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap>.article-meta.categories:hover {
+  background: var(--main);
+  -webkit-box-shadow: var(--main-shadow);
+  -moz-box-shadow: var(--main-shadow);
+  -ms-box-shadow: var(--main-shadow);
+  -o-box-shadow: var(--main-shadow);
+  box-shadow: var(--main-shadow);
+}
+
+#recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap>.article-meta.categories:hover a {
+  color: var(--second);
+}*/
