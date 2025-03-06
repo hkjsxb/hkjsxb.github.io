@@ -1,0 +1,38 @@
+/* 添加友链按钮 */
+/* 快速填写格式 */
+.addBtn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.addBtn button {
+    transition: .2s;
+    display: flex;
+    margin: 5px auto;
+    color: #ffffff; /* 文字颜色改为白色，更显清晰 */
+    padding: 15px;
+    border-radius: 40px;
+    background: #6a89cc; /* 背景颜色改为淡蓝色，比较柔和 */
+    align-items: center;
+}
+
+button {
+    padding: 0;
+    outline: 0;
+    border: none;
+    background: 0 0;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+.fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+.addBtn i {
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+.addBtn button:hover {
+    background: #4a69bd; /* 鼠标悬停时背景颜色改为深一点的蓝色，与淡蓝色搭配 */
+    color: #ffffff; /* 鼠标悬停时文字颜色保持白色 */
+}

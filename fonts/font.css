@@ -1,0 +1,114 @@
+@font-face {
+  /* 为载入的字体取名字(随意) */
+  font-family: huangkaihuaLawyerfont;	
+  /* 字体文件地址(相对或者绝对路径都可以) */
+  src: url(/fonts/huangkaihuaLawyerfont.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  /* 为载入的字体取名字(随意) */
+  font-family: dingliezhuhaifont;	
+  /* 字体文件地址(相对或者绝对路径都可以) */
+  src: url(/fonts/dingliezhuhaifont.ttf);
+  /* 定义加粗样式(加粗多少) */
+  /* 定义显示样式 */
+ font-display: swap;
+}
+
+@font-face {
+  /* 为载入的字体取名字(随意) */
+  font-family: FangZhengKaiTiJianTi;	
+  /* 字体文件地址(相对或者绝对路径都可以) */
+  src: url(/fonts/FangZhengKaiTiJianTi.ttf);
+  /* 定义显示样式 */
+  font-display: swap;
+}
+
+@font-face {
+  /* 为载入的字体取名字(随意) */
+  font-family: SanJiPoMoTi;	
+  /* 字体文件地址(相对或者绝对路径都可以) */
+  src: url(/fonts/SanJiPoMoTi.ttf);  
+  /* 定义显示样式 */
+ font-display: swap;
+}
+
+@font-face {
+  /* 为载入的字体取名字(随意) */
+  font-family: YunFengHanChanTi;	
+  /* 字体文件地址(相对或者绝对路径都可以) */
+  src: url(/fonts/YunFengHanChanTi.ttf);
+  /* 定义显示样式 */
+ font-display: swap;
+}
+/* 字体引入 */
+@font-face {
+  font-family: YSHST;
+  src: url(https://data-static.netdun.net/Fomalhaut/fonts/优设好身体.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: MiSans;
+  src: url(https://data-static.netdun.net/Fomalhaut/fonts/MiSans.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: HYTMR;
+  src: url(https://data-static.netdun.net/Fomalhaut/fonts/HYTangMeiRen55W.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: LXGW;
+  src: url(https://data-static.netdun.net/Fomalhaut/fonts/霞鹜文楷.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: TTQHB;
+  src: url(https://data-static.netdun.net/Fomalhaut/fonts/甜甜圈海报字体.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Consolas_1;
+  src: url(https://data-static.netdun.net/Fomalhaut/fonts/Consolas.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: ZhuZiAWan;
+  src: url(https://data-static.netdun.net/Fomalhaut/fonts/ZhuZiAWan2.woff2);
+  font-display: swap;
+}
+
+/* 特定部件字体调用 */
+div#menus {
+  font-weight: bold !important;
+}
+h1#site-title {
+  font-size: 3em !important;
+  font-weight: bold !important;
+}
+a.article-title,
+a.blog-slider__title,
+a.categoryBar-list-link,
+h1.post-title {
+  font-weight: bold !important;
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 3em;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-zhongbiao::before {
+  color: #f7c768;
+}
+
