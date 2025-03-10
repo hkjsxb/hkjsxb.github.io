@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>MySQL-8.0.26 安装教程（windows系统）</title>
+      <link href="/post/27803.html"/>
+      <url>/post/27803.html</url>
+      
+        <content type="html"><![CDATA[<div id="postchat_postcontent"><span id="more"></span><blockquote><h1><a href="%5BMySQL%20::%20Download%20MySQL%20Installer%20(Archived%20Versions)%5D(https://downloads.mysql.com/archives/installer/)">MySql下载地址</a></h1></blockquote><h2>一、安装MySQL</h2><p style="text-align:center"><img alt="" isbindedload="true" src="https://i-blog.csdnimg.cn/direct/1811b0c3188f4b8186144d4d1681e6b3.png" /></p><p class="img-center"><img alt="" isbindedload="true" src="https://i-blog.csdnimg.cn/direct/3cc37b72f2f345b78b5666a77b8a5f0b.png" /></p><p><img alt="" isbindedload="true" src="https://i-blog.csdnimg.cn/direct/f9225c51a3d54642bbda61f596003b01.png" /></p><p style="text-align:center"><img alt="" isbindedload="true" src="https://i-blog.csdnimg.cn/direct/1fc51c7d78384602906b1ccd0d3ac373.png" /></p><p><img alt="" isbindedload="true" src="https://i-blog.csdnimg.cn/direct/f0d1d183af22434aaa40456ceba5dfa7.png" /></p><p style="text-align:center"><img alt="" isbindedload="true" src="https://i-blog.csdnimg.cn/direct/1264d4a94c5649269e82d4bba82af18e.png" /></p><p><img alt="" isbindedload="true" src="https://i-blog.csdnimg.cn/direct/6cdc62b312324315bb0529eb40b625ea.png" /></p><p><img alt="" isbindedload="true" src="https://i-blog.csdnimg.cn/direct/9546de4b1c1b444cbc18cebc313bae38.png" /></p><ul>    <li>    <p>全部出现对号后，点击下一步。</p>    </li></ul><p style="text-align:center"><img alt="" isbindedload="true" src="https://i-blog.csdnimg.cn/direct/ba5d4412442f428994961edef2faec47.png" /></p><ul>    <li>    <p>点击下一步</p>    </li></ul><p style="text-align:center"><img alt="" isbindedload="true" src="https://i-blog.csdnimg.cn/direct/0a2a59003d2f4968986f1b2da9726f1e.png" /></p><ul>    <li>    <p>点击下一步</p>    </li></ul><p style="text-align:center"><img alt="" isbindedload="true" src="https://i-blog.csdnimg.cn/direct/2482cd68c99349c5ba156891f9ab1715.png" /></p><ul>    <li>    <p>选择第二个，点击下一步。</p>    </li></ul><p style="text-align:center"><img alt="" isbindedload="true" src="https://i-blog.csdnimg.cn/direct/87e7a0536bc4437eb675955ec4a6ca4b.png" /></p><p><img alt="" isbindedload="true" src="https://i-blog.csdnimg.cn/direct/edd23711456b4fb582104a0b0dac8bad.png" /></p><p><img alt="" isbindedload="true" src="https://i-blog.csdnimg.cn/direct/d6fe48a5d483499cbbfc36b5da5d9ff0.png" /></p><p style="text-align:center"><img alt="" isbindedload="true" src="https://i-blog.csdnimg.cn/direct/8ac06f1f70eb49139a8ed366b718409e.png" /></p><p><img alt="" isbindedload="true" src="https://i-blog.csdnimg.cn/direct/c66a1576860140fa83f714957a4bd3de.png" /></p><h2>二、配置环境变量</h2><ul>    <li>    <p>安装好MySQL之后，还需要配置环境变量，这样才可以在任何目录下连接MySQL。</p>    </li>    <li>    <p>打开环境变量-&gt;系统变量-&gt;Path-&gt;编辑-&gt;新建-&gt;将MySQL Server的安装目录下的bin目录添加到环境变量-&gt;确定</p>    </li></ul><p style="text-align:center"><img alt="" isbindedload="true" src="https://i-blog.csdnimg.cn/direct/075cc894848442d8ae6cf71b824d6c1b.png" /></p><ul>    <li>    <p>至此完成安装</p>    </li></ul><p style="text-align:center"><img alt="" isbindedload="true" src="https://i-blog.csdnimg.cn/direct/c088b47ab1ba46a0b0d05b121c1a57c9.png" /></p><p></p><p></p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> mysql windows </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MySQL安装教程及注意事项</title>
+      <link href="/post/56756.html"/>
+      <url>/post/56756.html</url>
+      
+        <content type="html"><![CDATA[<div id="postchat_postcontent"><h1 id="MySQL-8-0-26-安装教程（windows系统）"><a href="#MySQL-8-0-26-安装教程（windows系统）" class="headerlink" title="MySQL-8.0.26 安装教程（windows系统）"></a>MySQL-8.0.26 安装教程（windows系统）</h1><blockquote><p><a href="[MySQL :: Download MySQL Installer (Archived Versions">MySql下载地址</a>](<a href="https://downloads.mysql.com/archives/installer/">https://downloads.mysql.com/archives/installer/</a>))</p></blockquote><h2 id="一、安装MySQL"><a href="#一、安装MySQL" class="headerlink" title="一、安装MySQL"></a>一、安装MySQL</h2><p><img src="https://cloud.hkjsxb.com/20250310215731070.png" alt="下载MYSQL"></p><p><img src="https://cloud.hkjsxb.com/20250310215744048.png" alt=""></p><p><img src="https://cloud.hkjsxb.com/20250310215751691.png" alt="image-20250308212011535"></p><p><img src="https://cloud.hkjsxb.com/20250310215801813.png" alt="image-20250308212205489"></p><p><img src="https://cloud.hkjsxb.com/20250310215809110.png" alt="image-20250308212251046"></p><p><img src="https://cloud.hkjsxb.com/20250310215819034.png" alt="image-20250308212330104"></p><p><img src="https://cloud.hkjsxb.com/20250310215959505.png" alt="image-20250308212417710"></p><p><img src="https://cloud.hkjsxb.com/20250310215824033.png" alt="image-20250308212625972"></p><ul><li>全部出现对号后，点击下一步。</li></ul><p><img src="https://cloud.hkjsxb.com/20250310220005510.png" alt="image-20250308212710372"></p><ul><li>点击下一步</li></ul><p><img src="https://cloud.hkjsxb.com/20250310215837264.png" alt="image-20250308212829605"></p><ul><li>点击下一步</li></ul><p><img src="https://cloud.hkjsxb.com/20250310215846534.png" alt="image-20250308213056170"></p><ul><li>选择第二个，点击下一步。</li></ul><p><img src="https://cloud.hkjsxb.com/20250310215855318.png" alt="image-20250308213323531"></p><p><img src="https://cloud.hkjsxb.com/20250310220021786.png" alt="image-20250308213435308"></p><p><img src="https://cloud.hkjsxb.com/20250310215901083.png" alt="image-20250308213505931"></p><p><img src="https://cloud.hkjsxb.com/20250310215908212.png" alt="image-20250308213553037"></p><p><img src="https://cloud.hkjsxb.com/20250310220029998.png" alt="image-20250308213738079"></p><h2 id="二、配置环境变量"><a href="#二、配置环境变量" class="headerlink" title="二、配置环境变量"></a>二、配置环境变量</h2><ul><li><p>安装好MySQL之后，还需要配置环境变量，这样才可以在任何目录下连接MySQL。</p></li><li><p>打开环境变量-&gt;系统变量-&gt;Path-&gt;编辑-&gt;新建-&gt;将MySQL Server的安装目录下的bin目录添加到环境变量-&gt;确定</p></li></ul><p><img src="https://cloud.hkjsxb.com/20250310215914640.png" alt="image-20250308214931436"></p><ul><li>至此完成安装</li></ul><p><img src="https://cloud.hkjsxb.com/20250310215929176.png" alt="image-20250308215255994"></p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>博客更新日志</title>
       <link href="/post/19625.html"/>
       <url>/post/19625.html</url>
