@@ -690,7 +690,7 @@ input#pic-link {
   
   #footer #footer-wrap {
     padding: 0;
-    color: var(--text-highlight-color);
+    color: #FFFFFFE6
   }
   
   #footer #footer-banner {
@@ -711,11 +711,11 @@ input#pic-link {
   }
   
   #footer-wrap a {
-    color: var(--text-highlight-color);
+    color: #FFFFFFE6;
   }
   
   #footer-wrap a:hover {
-    color: var(--theme-color) !important;
+    color: #FFFFFFE6 !important;
   }
   
   #footer #footer-group-container {
@@ -733,10 +733,12 @@ input#pic-link {
     display: block;
     font-size: 1.2rem;
     font-weight: bold;
+    color: #FFFFFFE6;
   }
   
   #footer #footer-group-container .footer-group .footer-group-item {
     display: block;
+    color: #FFFFFFE6;
   }
   
   #footer #footer-group-container .footer-group#footer-group-flink .footer-group-title i {
