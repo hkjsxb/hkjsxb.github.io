@@ -25,22 +25,11 @@ document.addEventListener("copy", function () {
     }, 300);
 })
 
-/*new Vue({
-    data: function () {
-        this.$notify({
-            title: "你已被发现😜",
-            message: "小伙子，扒源记住要遵循GPL协议！",
-            position: 'top-left',
-            offset: 50,
-            showClose: true,
-            type: "warning",
-            duration: 5000
-        });
-    }
-})*/
+
 
 
 /*------------------------------------------------------------------------------------------------------------------------------------*/
+
 
 
 
@@ -145,6 +134,52 @@ setFont(initialFont);
 
 
 /**************************************************************************************/
+/*// 切换 FPS 检测
+function toggleFPS() {
+  const fpsOn = window.localStorage.getItem("fpson") === "1";
+  const fpsScriptId = "fps-script";
+
+  if (fpsOn) {
+    // 关闭 FPS 检测
+    window.localStorage.setItem("fpson", "0");
+    document.getElementById("toggleFPS").innerText = "开启 FPS 检测";
+
+    // 移除 fps.js 脚本
+    const fpsScript = document.getElementById(fpsScriptId);
+    if (fpsScript) {
+      document.head.removeChild(fpsScript);
+    }
+  } else {
+    // 开启 FPS 检测
+    window.localStorage.setItem("fpson", "1");
+    document.getElementById("toggleFPS").innerText = "关闭 FPS 检测";
+
+    // 加载 fps.js 脚本
+    const fpsScript = document.createElement("script");
+    fpsScript.id = fpsScriptId;
+    fpsScript.src = "/js/fps.js"; // 确保路径正确
+    document.head.appendChild(fpsScript);
+  }
+}
+
+// 初始化 FPS 状态
+function initFPS() {
+  const fpsOn = window.localStorage.getItem("fpson") === "1";
+  if (fpsOn) {
+    document.getElementById("toggleFPS").innerText = "关闭 FPS 检测";
+    const fpsScript = document.createElement("script");
+    fpsScript.id = "fps-script";
+    fpsScript.src = "/js/fps.js"; // 确保路径正确
+    document.head.appendChild(fpsScript);
+  } else {
+    document.getElementById("toggleFPS").innerText = "开启 FPS 检测";
+  }
+}
+
+// 页面加载时初始化
+window.onload = function () {
+  initFPS();
+};*/
 
 
 
@@ -208,17 +243,35 @@ function createWinbox() {
     },
   });
 
+
+
+/*/*//*<h2 style="text-align:left; margin-bottom:20px;">显示设置</h2>
+
+      <div>
+         <p style="text-align:center; margin-bottom:20px;">
+            <button id="toggleFPS" onclick="toggleFPS()" style="background:var(--theme-color); padding:10px; border-radius:18px; color:blue;">
+            <i class="fa-solid fa-toggle-on"></i> 切换 FPS 检测
+            </button>
+      </p>
+     </div>*//*/
+*/
+
+
+
+
+
   winResize();
   window.addEventListener('resize', winResize);
 
   winbox.body.innerHTML = `
     <div id="article-container" style="padding:10px;">
       <p><button onclick="localStorage.removeItem('blogbg');location.reload();" style="background:#5fcdff;display:block;width:100%;padding: 15px 0;border-radius:6px;color:white;"><i class="fa-solid fa-arrows-rotate"></i> 恢复默认设置</button></p>
-      
+
+      <h2 style="text-align:left; margin-bottom:20px;">字体设置</h2>
+
       <p style="text-align:center; margin-bottom:20px;">
       非商免字体未经授权只能个人使用。本站为完全非商业、非盈利性质的网站，平时用于个人学习交流，如有侵权请联系站长删除，谢谢！ —— 致版权方
       </p>
-      <h2 style="text-align:left; margin-bottom:20px;">字体设置</h2>
       <div id="swfs" style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
       <button class="swf" id="swf_huangkaihuaLawyerfont" onclick="setFont('huangkaihuaLawyerfont')" style="border-radius:18px; padding:10px 20px; background:var(--theme-color); color:black; font-family:'huangkaihuaLawyerfont'!important;">
        黄凯华律师字体
@@ -251,13 +304,11 @@ function createWinbox() {
       <h3>手机壁纸</h3>
 
       <div class="bgbox">
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)" class="pimgbox" onclick="changeBg('url(https://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://free4.yunpng.top/2025/02/18/67b430a45329f.jpg)" class="pimgbox" onclick="changeBg('url(https://free4.yunpng.top/2025/02/18/67b430a45329f.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://free4.yunpng.top/2025/02/18/67b430a6e21bd.jpg)" class="pimgbox" onclick="changeBg('url(https://free4.yunpng.top/2025/02/18/67b430a6e21bd.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://free4.yunpng.top/2025/02/18/67b430a90ae8e.jpg)" class="pimgbox" onclick="changeBg('url(https://free4.yunpng.top/2025/02/18/67b430a90ae8e.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://free4.yunpng.top/2025/02/18/67b430ab09aa1.jpg)" class="pimgbox" onclick="changeBg('url(https://free4.yunpng.top/2025/02/18/67b430ab09aa1.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://free4.yunpng.top/2025/02/18/67b430ac3e9eb.jpg)" class="pimgbox" onclick="changeBg('url(https://free4.yunpng.top/2025/02/18/67b430ac3e9eb.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://ooo.0x0.ooo/2025/02/18/OG9XCi.jpg)" class="pimgbox" onclick="changeBg('url(https://ooo.0x0.ooo/2025/02/18/OG9XCi.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.picui.cn/free/2025/02/18/67b43a43b94a7.jpg)" class="pimgbox" onclick="changeBg('url(https://img.picui.cn/free/2025/02/18/67b43a43b94a7.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.picui.cn/free/2025/02/18/67b43a4a4cf54.jpg)" class="pimgbox" onclick="changeBg('url(https://img.picui.cn/free/2025/02/18/67b43a4a4cf54.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.picui.cn/free/2025/02/18/67b43a4a4cfcd.jpg)" class="pimgbox" onclick="changeBg('url(https://img.picui.cn/free/2025/02/18/67b43a4a4cfcd.jpg)')"></a>
@@ -271,9 +322,6 @@ function createWinbox() {
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/img/2.jpg)" class="imgbox" onclick="changeBg('url(/img/2.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/img/3.jpg)" class="imgbox" onclick="changeBg('url(/img/3.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/img/4.jpg)" class="imgbox" onclick="changeBg('url(/img/4.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://ooo.0x0.ooo/2025/02/18/OGjOmp.jpg)" class="imgbox" onclick="changeBg('url(https://ooo.0x0.ooo/2025/02/18/OGjOmp.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://ooo.0x0.ooo/2025/02/18/OGjaYU.jpg)" class="imgbox" onclick="changeBg('url(https://ooo.0x0.ooo/2025/02/18/OGjaYU.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://ooo.0x0.ooo/2025/02/18/OGjqqY.jpg)" class="imgbox" onclick="changeBg('url(https://ooo.0x0.ooo/2025/02/18/OGjqqY.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.picui.cn/free/2025/02/18/67b43c62ad54a.jpg)" class="imgbox" onclick="changeBg('url(https://img.picui.cn/free/2025/02/18/67b43c62ad54a.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.picui.cn/free/2025/02/18/67b43bc246002.jpg)" class="imgbox" onclick="changeBg('url(https://img.picui.cn/free/2025/02/18/67b43bc246002.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.picui.cn/free/2025/02/18/67b43ae8c804d.jpg)" class="imgbox" onclick="changeBg('url(https://img.picui.cn/free/2025/02/18/67b43ae8c804d.jpg)')"></a>

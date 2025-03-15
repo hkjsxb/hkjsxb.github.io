@@ -985,103 +985,6 @@ img.footer_mini_logo {
 
 
 /********8888888888888888888888888888888******************************/
-/*/* 首页文章&双栏设置 */
-/*#recent-posts .recent-post-item {
-  height: 21rem;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-#recent-posts .recent-post-item:not(:first-child) {
-  margin-top: unset;
-}
-
-#recent-posts>.recent-post-item .post_cover.right {
-  order: unset;
-  -webkit-order: unset;
-  -ms-flex-order: unset;
-  -o-box-ordinal-group: unset;
-  -moz-box-ordinal-group: unset;
-  -webkit-box-ordinal-group: unset;
-}
-
-@media screen and (min-width: 769px) {
-  #recent-posts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  #recent-posts .recent-post-item {
-    width: calc(50% - .5rem);
-  }
-}
-
-#recent-posts>.recent-post-item .post_cover {
-  position: relative;
-  height: 75%;
-  width: 100%;
-}
-
-#recent-posts>.recent-post-item>.recent-post-info {
-  height: 25%;
-  width: 100%;
-  padding: .6rem .8rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#recent-posts>.recent-post-item>.recent-post-info>.article-title {
-  order: -1;
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  -o-box-ordinal-group: -1;
-  -moz-box-ordinal-group: -1;
-  -webkit-box-ordinal-group: -1;
-}
-
-
-
-#recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap {
-  color: var(--font-color);
-  margin: 0;
-  white-space: nowrap;
-  display: flex;
-  justify-content: space-between;
-}
-
-#recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap>.article-meta a {
-  color: var(--font-color);
-  padding: .3em;
-  border-radius: .4em;
-}
-
-#recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap>.article-meta.categories {
-  border-radius: .4em;
-  backdrop-filter: var(--backdrop-filter);
-  background: var(--lee-maskbg);
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -ms-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-
-#recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap>.article-meta.categories:hover {
-  background: var(--main);
-  -webkit-box-shadow: var(--main-shadow);
-  -moz-box-shadow: var(--main-shadow);
-  -ms-box-shadow: var(--main-shadow);
-  -o-box-shadow: var(--main-shadow);
-  box-shadow: var(--main-shadow);
-}
-
-#recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap>.article-meta.categories:hover a {
-  color: var(--second);
-}*/
-
 
 /*****************即刻短文*************************************/
 
@@ -1226,4 +1129,190 @@ img.footer_mini_logo {
 
 #bber > section > ul > li > div .bber-info-address {
   margin-left: 0.5rem;
+}
+
+
+
+
+
+/******************************************************/
+/* twikoo评论美化 */
+/* 自定义twikoo评论输入框高度 */
+#twikoo .el-textarea textarea {
+  min-height: 120px !important;
+  background-size: 90px;
+}
+
+/* 自定义表情优化 */
+#twikoo .OwO-body {
+  max-width: 100% !important;
+}
+/* 选择某个框 #twikoo .OwO .OwO-body .OwO-items:nth-child(1) */
+#twikoo .OwO .OwO-body .OwO-items {
+  max-height: 250px !important;
+}
+
+.OwO .OwO-body .OwO-items-image .OwO-item {
+  max-width: calc(9% - 10px);
+  box-sizing: content-box;
+}
+.OwO .OwO-body .OwO-items-image .OwO-item[title|="Heybox"],
+.OwO .OwO-body .OwO-items-image .OwO-item[title|="Tieba"],
+.OwO .OwO-body .OwO-items-show .OwO-item[title*="bilibili"] {
+  max-width: calc(7% - 10px) !important;
+  box-sizing: content-box;
+}
+
+#twikoo .OwO-items li img {
+  width: 100% !important;
+}
+
+.tk-comment .vemoji[alt|="Menhera"],
+.tk-comment .tk-owo-emotion[alt*="Menhera"],
+.tk-comment .vemoji[alt|="Snow"],
+.tk-comment .tk-owo-emotion[alt*="Snow"],
+.tk-comment .vemoji[alt|="Sweetie"],
+.tk-comment .tk-owo-emotion[alt*="Sweetie"],
+.tk-comment .vemoji[alt|="Tsuri"],
+.tk-comment .tk-owo-emotion[alt*="Tsuri"],
+.tk-comment .vemoji[alt|="Yurui"],
+.tk-comment .tk-owo-emotion[alt*="Yurui"] {
+  max-width: 120px !important;
+  max-height: 120px !important;
+  width: 120px;
+  margin: 8px 1px;
+  display: block !important;
+}
+
+/* 手机端适配 */
+@media screen and (max-width: 768px) {
+  .tk-comment .vemoji[alt|="Menhera"],
+  .tk-comment .tk-owo-emotion[alt*="Menhera"],
+  .tk-comment .vemoji[alt|="Snow"],
+  .tk-comment .tk-owo-emotion[alt*="Snow"],
+  .tk-comment .vemoji[alt|="Sweetie"],
+  .tk-comment .tk-owo-emotion[alt*="Sweetie"],
+  .tk-comment .vemoji[alt|="Tsuri"],
+  .tk-comment .tk-owo-emotion[alt*="Tsuri"],
+  .tk-comment .vemoji[alt|="Yurui"],
+  .tk-comment .tk-owo-emotion[alt*="Yurui"] {
+    max-width: calc(100% - 30px) !important;
+    max-height: calc(100% - 30px) !important;
+  }
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Menhera"],
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Snow"],
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Sweetie"],
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Tsuri"],
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Yurui"] {
+    max-width: calc(33% - 10px);
+    box-sizing: border-box;
+  }
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Heybox"],
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="bilibili"],
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Tieba"],
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="QQ"] {
+    max-width: calc(18% - 10px) !important;
+    box-sizing: content-box;
+  }
+}
+
+/* 右下角闭眼 */
+.el-textarea__inner {
+  background-image: url(https://tuchuang.voooe.cn/images/2023/01/02/open.webp) !important;
+}
+.el-textarea__inner:focus {
+  background-image: url(https://tuchuang.voooe.cn/images/2023/01/02/close.webp) !important;
+}
+
+
+
+
+/******************************************************************************************************/
+/* 文章页H1-H6图标样式效果 */
+/* 控制风车转动速度 4s那里可以自己调节快慢 */
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+  -webkit-animation: ccc 4s linear infinite;
+  animation: ccc 4s linear infinite;
+}
+/* 控制风车转动方向 -1turn 为逆时针转动，1turn 为顺时针转动，相同数字部分记得统一修改 */
+@-webkit-keyframes ccc {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-1turn);
+    transform: rotate(-1turn);
+  }
+}
+@keyframes ccc {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-1turn);
+    transform: rotate(-1turn);
+  }
+}
+/* 设置风车颜色 */
+#content-inner.layout h1::before {
+  color: #ef50a8;
+  margin-left: -1.55rem;
+  font-size: 1.3rem;
+  margin-top: -0.23rem;
+}
+#content-inner.layout h2::before {
+  color: #fb7061;
+  margin-left: -1.35rem;
+  font-size: 1.1rem;
+  margin-top: -0.12rem;
+}
+#content-inner.layout h3::before {
+  color: #ffbf00;
+  margin-left: -1.22rem;
+  font-size: 0.95rem;
+  margin-top: -0.09rem;
+}
+#content-inner.layout h4::before {
+  color: #a9e000;
+  margin-left: -1.05rem;
+  font-size: 0.8rem;
+  margin-top: -0.09rem;
+}
+#content-inner.layout h5::before {
+  color: #57c850;
+  margin-left: -0.9rem;
+  font-size: 0.7rem;
+  margin-top: 0rem;
+}
+#content-inner.layout h6::before {
+  color: #5ec1e0;
+  margin-left: -0.9rem;
+  font-size: 0.66rem;
+  margin-top: 0rem;
+}
+/* s设置风车hover动效 6s那里可以自己调节快慢*/
+#content-inner.layout h1:hover,
+#content-inner.layout h2:hover,
+#content-inner.layout h3:hover,
+#content-inner.layout h4:hover,
+#content-inner.layout h5:hover,
+#content-inner.layout h6:hover {
+  color: var(--theme-color);
+}
+#content-inner.layout h1:hover::before,
+#content-inner.layout h2:hover::before,
+#content-inner.layout h3:hover::before,
+#content-inner.layout h4:hover::before,
+#content-inner.layout h5:hover::before,
+#content-inner.layout h6:hover::before {
+  color: var(--theme-color);
+  -webkit-animation: ccc 6s linear infinite;
+  animation: ccc 6s linear infinite;
 }
