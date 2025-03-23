@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>butterfly主题-首页文章双栏布局</title>
+      <link href="/post/40438.html"/>
+      <url>/post/40438.html</url>
+      
+        <content type="html"><![CDATA[<div id="postchat_postcontent"><h1 id="butterfly主题-首页文章双栏布局"><a href="#butterfly主题-首页文章双栏布局" class="headerlink" title="butterfly主题-首页文章双栏布局"></a>butterfly主题-首页文章双栏布局</h1><div class="note green no-icon simple"><blockquote><p>注意事项：</p><ul><li>魔改有一定的风险，请先备份，然后在跟着修改。</li><li>“+” 代表加上这行代码，“-” 代表删除这行代码，加上代码之后，请将“+”进行删除。由于有严格的缩进，可能会出现因为缩进的问题，而出现错误。</li><li>需要具备掌握一定的html、css、javascript基础，hexo基本修改的能力，才可以进行。</li></ul></blockquote><div class="tag link"><a class="link-card" title="css参考" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.css"><div class="left"><img src="/img/link.png"/></div><div class="right"><p class="text">css参考</p><p class="url">https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.css</p></div></a></div></div><h2 id="先打开主题配置文件，位于根目录的-config-butterfly-yml文件"><a href="#先打开主题配置文件，位于根目录的-config-butterfly-yml文件" class="headerlink" title="先打开主题配置文件，位于根目录的_config.butterfly.yml文件"></a>先打开主题配置文件，位于根目录的_config.butterfly.yml文件</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Article layout on the homepage</span></span><br><span class="line"><span class="comment"># 1: Cover on the left, info on the right</span></span><br><span class="line"><span class="comment"># 2: Cover on the right, info on the left</span></span><br><span class="line"><span class="comment"># 3: Cover and info alternate between left and right</span></span><br><span class="line"><span class="comment"># 4: Cover on top, info on the bottom</span></span><br><span class="line"><span class="comment"># 5: Info displayed on the cover</span></span><br><span class="line"><span class="comment"># 6: Masonry layout - Cover on top, info on the bottom</span></span><br><span class="line"><span class="comment"># 7: Masonry layout - Info displayed on the cover</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">index_layout:</span> <span class="number">1</span></span><br><span class="line"><span class="string">+</span> <span class="attr">index_layout:</span> <span class="number">6</span></span><br></pre></td></tr></table></figure><h2 id="找到-Blog-themes-butterfly-source-css-page-homepage-styl"><a href="#找到-Blog-themes-butterfly-source-css-page-homepage-styl" class="headerlink" title="找到 [Blog]\themes\butterfly\source\css\_page\homepage.styl"></a>找到 [Blog]\themes\butterfly\source\css\_page\homepage.styl</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#recent-posts</span></span><br><span class="line">  <span class="selector-class">.recent-post-item</span></span><br><span class="line">    <span class="keyword">@extend</span> .cardHover</span><br><span class="line">    <span class="attribute">position</span>: relative</span><br><span class="line">    <span class="attribute">overflow</span>: hidden</span><br><span class="line">    <span class="attribute">margin-bottom</span>: <span class="number">20px</span></span><br><span class="line"></span><br><span class="line">    if $indexLayout == <span class="number">6</span> || ($indexLayout == <span class="number">7</span>)</span><br><span class="line">      <span class="attribute">display</span>: inline-block</span><br><span class="line">      <span class="attribute">width</span>: calc(<span class="number">100%</span> / <span class="number">2</span> - <span class="number">8px</span>)</span><br><span class="line">      <span class="attribute">vertical-align</span>: top</span><br><span class="line">+      <span class="attribute">margin-left</span>: <span class="number">0.46rem</span></span><br></pre></td></tr></table></figure><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">  &amp; &gt; <span class="selector-class">.article-title</span></span><br><span class="line">    <span class="keyword">@extend</span> .limit-more-line</span><br><span class="line">    <span class="attribute">color</span>: var(--text-highlight-color)</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1.55em</span></span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">1.4</span></span><br><span class="line">    <span class="attribute">transition</span>: all .<span class="number">2s</span> ease-in-out</span><br><span class="line">-   <span class="attribute">-webkit-line-clamp</span>: <span class="number">2</span></span><br><span class="line">+    <span class="attribute">-webkit-line-clamp</span>: <span class="number">1</span></span><br><span class="line">+    <span class="attribute">margin-top</span>: <span class="number">0.3rem</span>; <span class="comment">/*控制标题的上间距*/</span></span><br><span class="line">+    <span class="attribute">margin-bottom</span>: <span class="number">0.3rem</span>;<span class="comment">/*控制标题的下间距*/</span></span><br><span class="line">+    <span class="attribute">color</span>: <span class="built_in">var</span>(--text-highlight-color);</span><br><span class="line">+    <span class="attribute">font-size</span>: <span class="number">1.3em</span>; <span class="comment">/*控制标题的字体大小*/</span></span><br><span class="line">+    <span class="attribute">line-height</span>: <span class="number">1.4</span>;<span class="comment">/*控制标题的行高*/</span></span><br></pre></td></tr></table></figure><h2 id="最后-GitBash-hexo-三连，在本地预览一下效果"><a href="#最后-GitBash-hexo-三连，在本地预览一下效果" class="headerlink" title="最后 GitBash hexo 三连，在本地预览一下效果"></a>最后 GitBash hexo 三连，在本地预览一下效果</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 魔改教程 </category>
+          
+          <category> 网站建设 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>MySQL-8.0.26 安装教程（windows系统）</title>
       <link href="/post/27803.html"/>
       <url>/post/27803.html</url>
@@ -45,6 +72,12 @@
       </categories>
       
       
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -64,6 +97,12 @@
       </categories>
       
       
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -82,6 +121,12 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
       
     </entry>
     
@@ -104,7 +149,7 @@
       
         <tags>
             
-            <tag> 网站建设 </tag>
+            <tag> hexo </tag>
             
         </tags>
       
