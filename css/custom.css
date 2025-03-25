@@ -41,7 +41,7 @@
 #recent-posts > .recent-post-item {
   background: var(--trans-light);
   backdrop-filter: var(--backdrop-filter);
-  border-radius: 25px;
+  border-radius: 12px 8px 8px 12px;
   border: var(--border-style);
 }
 
