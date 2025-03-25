@@ -3330,7 +3330,7 @@ maxWidth1200()
 }
 #recent-posts {
   background: transparent;
-  padding: 0px;
+  padding: 0px 0px 10px 0px;
 }
 #recent-posts .recent-post-item {
   position: relative;
