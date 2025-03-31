@@ -328,6 +328,18 @@ function createWinbox() {
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.picui.cn/free/2025/02/18/67b43c62ad54a.jpg)" class="imgbox" onclick="changeBg('url(https://img.picui.cn/free/2025/02/18/67b43c62ad54a.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.picui.cn/free/2025/02/18/67b43bc246002.jpg)" class="imgbox" onclick="changeBg('url(https://img.picui.cn/free/2025/02/18/67b43bc246002.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.picui.cn/free/2025/02/18/67b43ae8c804d.jpg)" class="imgbox" onclick="changeBg('url(https://img.picui.cn/free/2025/02/18/67b43ae8c804d.jpg)')"></a>
+        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cloud.hkjsxb.com/20250331204945195.jpg)" class="imgbox" onclick="changeBg('url(https://cloud.hkjsxb.com/20250331204945195.jpg)')"></a>
+        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cloud.hkjsxb.com/20250331205124077.jpg)" class="imgbox" onclick="changeBg('url(https://cloud.hkjsxb.com/20250331205124077.jpg)')"></a>
+        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cloud.hkjsxb.com/20250331205315767.jpg)" class="imgbox" onclick="changeBg('url(https://cloud.hkjsxb.com/20250331205315767.jpg)')"></a>
+        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cloud.hkjsxb.com/20250331205437488.jpg)" class="imgbox" onclick="changeBg('url(https://cloud.hkjsxb.com/20250331205437488.jpg)')"></a>
+        
+
+
+
+
+
+
+
       </div>
 
       <h3>渐变色</h3>
