@@ -276,24 +276,6 @@ function createWinbox() {
       <button class="swf" id="swf_huangkaihuaLawyerfont" onclick="setFont('huangkaihuaLawyerfont')" style="border-radius:18px; padding:10px 20px; background:var(--theme-color); color:black; font-family:'huangkaihuaLawyerfont'!important;">
        黄凯华律师字体
       </button>
-      <button class="swf" id="swf_ZhuZiAWan" onclick="setFont('ZhuZiAWan')" style="border-radius:18px; padding:10px 20px; background:var(--theme-color); color:black; font-family:'ZhuZiAWan'!important;">
-        筑紫A丸标准体2.0
-      </button>
-      <button class="swf" id="swf_HYTMR" onclick="setFont('HYTMR')" style="border-radius:18px; padding:10px 20px; background:var(--theme-color); color:black; font-family:'HYTMR'!important;">
-        汉仪唐美人
-      </button>
-      <button class="swf" id="swf_LXGW" onclick="setFont('LXGW')" style="border-radius:18px; padding:10px 20px; background:var(--theme-color); color:black; font-family:'LXGW'!important;">
-        霞鹜文楷
-      </button>
-      <button class="swf" id="swf_TTQHB" onclick="setFont('TTQHB')" style="border-radius:18px; padding:10px 20px; background:var(--theme-color); color:black; font-family:'TTQHB'!important;">
-        甜甜圈海报
-      </button>
-      <button class="swf" id="swf_YSHST" onclick="setFont('YSHST')" style="border-radius:18px; padding:10px 20px; background:var(--theme-color); color:black; font-family:'YSHST'!important;">
-        优设好身体
-      </button>
-      <button class="swf" id="swf_MiSans" onclick="setFont('MiSans')" style="border-radius:18px; padding:10px 20px; background:var(--theme-color); color:black; font-family:'MiSans'!important;">
-        MiSans
-      </button>
       <button class="swf" id="swf_default" onclick="setFont('default')" style="border-radius:18px; padding:10px 20px; background:var(--theme-color); color:black;">
         系统默认
       </button>
@@ -304,14 +286,7 @@ function createWinbox() {
       <h3>手机壁纸</h3>
 
       <div class="bgbox">
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://free4.yunpng.top/2025/02/18/67b430a45329f.jpg)" class="pimgbox" onclick="changeBg('url(https://free4.yunpng.top/2025/02/18/67b430a45329f.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://free4.yunpng.top/2025/02/18/67b430a6e21bd.jpg)" class="pimgbox" onclick="changeBg('url(https://free4.yunpng.top/2025/02/18/67b430a6e21bd.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://free4.yunpng.top/2025/02/18/67b430a90ae8e.jpg)" class="pimgbox" onclick="changeBg('url(https://free4.yunpng.top/2025/02/18/67b430a90ae8e.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://free4.yunpng.top/2025/02/18/67b430ab09aa1.jpg)" class="pimgbox" onclick="changeBg('url(https://free4.yunpng.top/2025/02/18/67b430ab09aa1.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://free4.yunpng.top/2025/02/18/67b430ac3e9eb.jpg)" class="pimgbox" onclick="changeBg('url(https://free4.yunpng.top/2025/02/18/67b430ac3e9eb.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.picui.cn/free/2025/02/18/67b43a43b94a7.jpg)" class="pimgbox" onclick="changeBg('url(https://img.picui.cn/free/2025/02/18/67b43a43b94a7.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.picui.cn/free/2025/02/18/67b43a4a4cf54.jpg)" class="pimgbox" onclick="changeBg('url(https://img.picui.cn/free/2025/02/18/67b43a4a4cf54.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.picui.cn/free/2025/02/18/67b43a4a4cfcd.jpg)" class="pimgbox" onclick="changeBg('url(https://img.picui.cn/free/2025/02/18/67b43a4a4cfcd.jpg)')"></a>
+        
       </div>
 
       <h3>电脑壁纸</h3>
@@ -325,9 +300,6 @@ function createWinbox() {
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/img/2.jpg)" class="imgbox" onclick="changeBg('url(/img/2.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/img/3.jpg)" class="imgbox" onclick="changeBg('url(/img/3.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/img/4.jpg)" class="imgbox" onclick="changeBg('url(/img/4.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.picui.cn/free/2025/02/18/67b43c62ad54a.jpg)" class="imgbox" onclick="changeBg('url(https://img.picui.cn/free/2025/02/18/67b43c62ad54a.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.picui.cn/free/2025/02/18/67b43bc246002.jpg)" class="imgbox" onclick="changeBg('url(https://img.picui.cn/free/2025/02/18/67b43bc246002.jpg)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.picui.cn/free/2025/02/18/67b43ae8c804d.jpg)" class="imgbox" onclick="changeBg('url(https://img.picui.cn/free/2025/02/18/67b43ae8c804d.jpg)')"></a>
       </div>
 
       <h3>渐变色</h3>
