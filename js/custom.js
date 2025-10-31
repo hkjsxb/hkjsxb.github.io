@@ -286,13 +286,11 @@ function createWinbox() {
       <h3>电脑壁纸</h3>
 
       <div class="bgbox">
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cloud.hkjsxb.com/20250315125747697.png)" class="pimgbox" onclick="changeBg('url(https://cloud.hkjsxb.com/20250315125747697.png)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cloud.hkjsxb.com/20250315125740369.png)" class="pimgbox" onclick="changeBg('url(https://cloud.hkjsxb.com/20250315125740369.png)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cloud.hkjsxb.com/20250315125722032.png)" class="pimgbox" onclick="changeBg('url(https://cloud.hkjsxb.com/20250315125722032.png)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/img/1.jpg)" class="imgbox" onclick="changeBg('url(/img/1.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/img/2.jpg)" class="imgbox" onclick="changeBg('url(/img/2.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/img/3.jpg)" class="imgbox" onclick="changeBg('url(/img/3.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/img/4.jpg)" class="imgbox" onclick="changeBg('url(/img/4.jpg)')"></a>
+        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/img/4.jpg)" class="imgbox" onclick="changeBg('url(/img/bg.png)')"></a>
       </div>
 
       <h3>渐变色</h3>
