@@ -283,19 +283,12 @@ function createWinbox() {
 
       <h2 style="text-align:left; margin-bottom:20px;">背景设置</h2>
 
-      <h3>手机壁纸</h3>
-
-      <div class="bgbox">
-        
-      </div>
-
       <h3>电脑壁纸</h3>
 
       <div class="bgbox">
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cloud.hkjsxb.com/20250315125747697.png)" class="pimgbox" onclick="changeBg('url(https://cloud.hkjsxb.com/20250315125747697.png)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cloud.hkjsxb.com/20250315125740369.png)" class="pimgbox" onclick="changeBg('url(https://cloud.hkjsxb.com/20250315125740369.png)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cloud.hkjsxb.com/20250315125722032.png)" class="pimgbox" onclick="changeBg('url(https://cloud.hkjsxb.com/20250315125722032.png)')"></a>
-        <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cn.bing.com/th?id=OHR.GBRTurtle_ZH-CN6069093254_1920x1080.jpg)" class="imgbox" onclick="changeBg('url(https://cn.bing.com/th?id=OHR.GBRTurtle_ZH-CN6069093254_1920x1080.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/img/1.jpg)" class="imgbox" onclick="changeBg('url(/img/1.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/img/2.jpg)" class="imgbox" onclick="changeBg('url(/img/2.jpg)')"></a>
         <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/img/3.jpg)" class="imgbox" onclick="changeBg('url(/img/3.jpg)')"></a>
